@@ -22,7 +22,7 @@ fi
 echo "running test with user: $USERNAME"
 
 
-sudo -iu "$USERNAME" <<EOF
+sudo su - "$USERNAME" <<EOF
     check "ghci existance" ghci --version
     check "cabal existance" cabal --version
 EOF
