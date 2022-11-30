@@ -45,9 +45,9 @@ jobs:
           GENERATED: ${{ toJson(fromJson(needs.find-feature.outputs.generated_features)) }}
         run: |
           set -e
-          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  \'${{ needs.find-feature.outputs.generated_features }}\'; then
+          if  jq -e 'any(. == "${{ matrix.features }}")' <<<  '${{ needs.find-feature.outputs.generated_features }}'; then
           cd ..
-          cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}
+          cookiecutter ./features/pkgs/feature-template --overwrite-if-exists --no-input --config-file ./features/feature_specs/${{ matrix.features }}.yaml
           cd features
           fi
         
