@@ -1,12 +1,19 @@
 #!/bin/bash
 
-set -e
+set -x
 
 source dev-container-features-test-lib
 
+echo $USERNAME
+echo $USER
+whoami 
+id
+
+
 # we are simply checking existance for now.
-# full operability depends on the existance of kubectl.
 check "ghci existance" ghci --version
 check "cabal existance" cabal --version
+
+
 
 reportResults
