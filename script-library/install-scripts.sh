@@ -44,9 +44,9 @@ install_via_npm() {
 install_via_asdf() {
     # This is part of devcontainers-contrib script library
     # source: https://github.com/devcontainers-contrib/features/tree/v1.1.7/script-library
-    REPO=$1
-    PACKAGE=$2
-    VERSION=$3
+    PACKAGE=$1
+    VERSION=$2
+    REPO=$3
 
     # install git and curl if does not exists
     check_packages curl git
