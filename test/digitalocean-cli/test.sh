@@ -21,9 +21,8 @@ if [ "${USERNAME}" = "" ]; then
 fi
 
 
-su - "$USERNAME" <<EOF
+sudo su - "$USERNAME" <<EOF
     check "doctl cli existance" doctl version
 EOF
-
 
 reportResults
