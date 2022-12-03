@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kotlin"
+  feature_name: "Kotlin (via asdf)"
+  feature_id: "kotlin-asdf"
+  test_command: "kotlin --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kotlin"
+      display_name: "Kotlin"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

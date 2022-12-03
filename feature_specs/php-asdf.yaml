@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs PHP"
+  feature_name: "PHP (via asdf)"
+  feature_id: "php-asdf"
+  test_command: "php --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "php"
+      display_name: "PHP"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

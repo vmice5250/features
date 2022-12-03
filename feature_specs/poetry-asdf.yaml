@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Poetry"
+  feature_name: "Poetry (via asdf)"
+  feature_id: "poetry-asdf"
+  test_command: "poetry --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "poetry"
+      display_name: "Poetry"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

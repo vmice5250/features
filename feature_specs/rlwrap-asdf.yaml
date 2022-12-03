@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs rlwrap"
+  feature_name: "rlwrap (via asdf)"
+  feature_id: "rlwrap-asdf"
+  test_command: "rlwrap --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rlwrap"
+      display_name: "rlwrap"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
