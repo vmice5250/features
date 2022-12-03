@@ -84,7 +84,7 @@ curl -sSL https://github.com/digitalocean/doctl/releases/download/v${DIGITALOCEA
 tar xf ./"${DIGITALOCEAN_CLI_FILENAME}"
 
 # Make binary executable
-chmod +x ./doctl
+# chmod +x ./doctl
 
 mv ./doctl /usr/local/bin/doctl
 

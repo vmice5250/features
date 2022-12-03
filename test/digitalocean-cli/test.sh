@@ -4,6 +4,9 @@ set -e
 
 source dev-container-features-test-lib
 
-check "doctl cli existance" doctl version
+su - "$_REMOTE_USER" <<EOF
+    check "doctl cli existance" doctl version
+EOF
+
 
 reportResults
