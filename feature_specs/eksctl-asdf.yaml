@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs eksctl"
+  feature_name: "eksctl (via asdf)"
+  feature_id: "eksctl-asdf"
+  test_command: "eksctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "eksctl"
+      display_name: "eksctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

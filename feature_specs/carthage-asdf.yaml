@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs carthage"
+  feature_name: "carthage (via asdf)"
+  feature_id: "carthage-asdf"
+  test_command: "carthage --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "carthage"
+      display_name: "carthage"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

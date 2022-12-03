@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ki"
+  feature_name: "ki (via asdf)"
+  feature_id: "ki-asdf"
+  test_command: "ki --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ki"
+      display_name: "ki"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

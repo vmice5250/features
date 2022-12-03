@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Helm Chart Releaser"
+  feature_name: "Helm Chart Releaser (via asdf)"
+  feature_id: "helm-cr-asdf"
+  test_command: "helm-cr --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helm-cr"
+      display_name: "Helm Chart Releaser"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

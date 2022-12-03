@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SwiftGen"
+  feature_name: "SwiftGen (via asdf)"
+  feature_id: "swiftgen-asdf"
+  test_command: "swiftgen --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "swiftgen"
+      display_name: "SwiftGen"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

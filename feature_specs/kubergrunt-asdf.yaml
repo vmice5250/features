@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubergrunt"
+  feature_name: "Kubergrunt (via asdf)"
+  feature_id: "kubergrunt-asdf"
+  test_command: "kubergrunt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubergrunt"
+      display_name: "Kubergrunt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

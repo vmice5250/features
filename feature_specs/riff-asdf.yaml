@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Riff"
+  feature_name: "Riff (via asdf)"
+  feature_id: "riff-asdf"
+  test_command: "riff --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "riff"
+      display_name: "Riff"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

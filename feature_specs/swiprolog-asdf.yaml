@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SWIProlog"
+  feature_name: "SWIProlog (via asdf)"
+  feature_id: "swiprolog-asdf"
+  test_command: "swiprolog --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "swiprolog"
+      display_name: "SWIProlog"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

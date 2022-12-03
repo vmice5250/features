@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Delta"
+  feature_name: "Delta (via asdf)"
+  feature_id: "delta-asdf"
+  test_command: "delta --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "delta"
+      display_name: "Delta"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

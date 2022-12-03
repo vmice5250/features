@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs DOME"
+  feature_name: "DOME (via asdf)"
+  feature_id: "dome-asdf"
+  test_command: "dome --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dome"
+      display_name: "DOME"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

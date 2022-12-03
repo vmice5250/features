@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Solidity"
+  feature_name: "Solidity (via asdf)"
+  feature_id: "solidity-asdf"
+  test_command: "solidity --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "solidity"
+      display_name: "Solidity"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

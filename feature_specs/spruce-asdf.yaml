@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Spruce"
+  feature_name: "Spruce (via asdf)"
+  feature_id: "spruce-asdf"
+  test_command: "spruce --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "spruce"
+      display_name: "Spruce"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

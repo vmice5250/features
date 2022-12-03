@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs zigmod"
+  feature_name: "zigmod (via asdf)"
+  feature_id: "zigmod-asdf"
+  test_command: "zigmod --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "zigmod"
+      display_name: "zigmod"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

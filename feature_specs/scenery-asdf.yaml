@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Scenery"
+  feature_name: "Scenery (via asdf)"
+  feature_id: "scenery-asdf"
+  test_command: "scenery --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "scenery"
+      display_name: "Scenery"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

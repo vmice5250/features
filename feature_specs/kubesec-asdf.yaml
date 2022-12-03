@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubesec"
+  feature_name: "Kubesec (via asdf)"
+  feature_id: "kubesec-asdf"
+  test_command: "kubesec --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubesec"
+      display_name: "Kubesec"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

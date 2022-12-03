@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Spin"
+  feature_name: "Spin (via asdf)"
+  feature_id: "spin-asdf"
+  test_command: "spin --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "spin"
+      display_name: "Spin"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

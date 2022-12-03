@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs PureScript"
+  feature_name: "PureScript (via asdf)"
+  feature_id: "purescript-asdf"
+  test_command: "purescript --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "purescript"
+      display_name: "PureScript"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

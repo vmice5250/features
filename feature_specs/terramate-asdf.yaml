@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Terramate"
+  feature_name: "Terramate (via asdf)"
+  feature_id: "terramate-asdf"
+  test_command: "terramate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "terramate"
+      display_name: "Terramate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

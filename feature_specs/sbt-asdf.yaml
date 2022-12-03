@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SBT"
+  feature_name: "SBT (via asdf)"
+  feature_id: "sbt-asdf"
+  test_command: "sbt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sbt"
+      display_name: "SBT"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

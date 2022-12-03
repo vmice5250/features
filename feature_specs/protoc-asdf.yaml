@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs protoc"
+  feature_name: "protoc (via asdf)"
+  feature_id: "protoc-asdf"
+  test_command: "protoc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "protoc"
+      display_name: "protoc"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

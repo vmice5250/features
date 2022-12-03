@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs LuaJIT"
+  feature_name: "LuaJIT (via asdf)"
+  feature_id: "luaJIT-asdf"
+  test_command: "luaJIT --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "luaJIT"
+      display_name: "LuaJIT"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

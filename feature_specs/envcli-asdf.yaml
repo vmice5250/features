@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs EnvCLI"
+  feature_name: "EnvCLI (via asdf)"
+  feature_id: "envcli-asdf"
+  test_command: "envcli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "envcli"
+      display_name: "EnvCLI"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

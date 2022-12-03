@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs TFLint"
+  feature_name: "TFLint (via asdf)"
+  feature_id: "tflint-asdf"
+  test_command: "tflint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tflint"
+      display_name: "TFLint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

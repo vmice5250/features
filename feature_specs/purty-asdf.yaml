@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Purty"
+  feature_name: "Purty (via asdf)"
+  feature_id: "purty-asdf"
+  test_command: "purty --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "purty"
+      display_name: "Purty"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs terraform-lsp"
+  feature_name: "terraform-lsp (via asdf)"
+  feature_id: "terraform-lsp-asdf"
+  test_command: "terraform-lsp --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "terraform-lsp"
+      display_name: "terraform-lsp"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

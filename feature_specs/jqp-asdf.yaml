@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs jqp"
+  feature_name: "jqp (via asdf)"
+  feature_id: "jqp-asdf"
+  test_command: "jqp --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jqp"
+      display_name: "jqp"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

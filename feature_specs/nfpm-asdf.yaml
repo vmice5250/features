@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs nfpm"
+  feature_name: "nfpm (via asdf)"
+  feature_id: "nfpm-asdf"
+  test_command: "nfpm --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nfpm"
+      display_name: "nfpm"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

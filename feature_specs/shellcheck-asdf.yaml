@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Shellcheck"
+  feature_name: "Shellcheck (via asdf)"
+  feature_id: "shellcheck-asdf"
+  test_command: "shellcheck --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "shellcheck"
+      display_name: "Shellcheck"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

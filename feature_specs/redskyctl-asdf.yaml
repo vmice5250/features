@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs redskyctl"
+  feature_name: "redskyctl (via asdf)"
+  feature_id: "redskyctl-asdf"
+  test_command: "redskyctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "redskyctl"
+      display_name: "redskyctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

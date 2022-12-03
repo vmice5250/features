@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Istioctl"
+  feature_name: "Istioctl (via asdf)"
+  feature_id: "istioctl-asdf"
+  test_command: "istioctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "istioctl"
+      display_name: "Istioctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

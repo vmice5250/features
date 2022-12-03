@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Sloth"
+  feature_name: "Sloth (via asdf)"
+  feature_id: "sloth-asdf"
+  test_command: "sloth --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sloth"
+      display_name: "Sloth"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

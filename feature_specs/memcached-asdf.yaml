@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Memcached"
+  feature_name: "Memcached (via asdf)"
+  feature_id: "memcached-asdf"
+  test_command: "memcached --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "memcached"
+      display_name: "Memcached"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

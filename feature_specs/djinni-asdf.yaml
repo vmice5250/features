@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs djinni"
+  feature_name: "djinni (via asdf)"
+  feature_id: "djinni-asdf"
+  test_command: "djinni --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "djinni"
+      display_name: "djinni"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

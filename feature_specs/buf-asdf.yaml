@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Buf"
+  feature_name: "Buf (via asdf)"
+  feature_id: "buf-asdf"
+  test_command: "buf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "buf"
+      display_name: "Buf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

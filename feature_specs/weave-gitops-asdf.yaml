@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs weave-gitops"
+  feature_name: "weave-gitops (via asdf)"
+  feature_id: "weave-gitops-asdf"
+  test_command: "weave-gitops --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "weave-gitops"
+      display_name: "weave-gitops"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

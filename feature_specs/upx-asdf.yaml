@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs upx"
+  feature_name: "upx (via asdf)"
+  feature_id: "upx-asdf"
+  test_command: "upx --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "upx"
+      display_name: "upx"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

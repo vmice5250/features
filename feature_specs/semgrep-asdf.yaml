@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs semgrep"
+  feature_name: "semgrep (via asdf)"
+  feature_id: "semgrep-asdf"
+  test_command: "semgrep --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "semgrep"
+      display_name: "semgrep"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

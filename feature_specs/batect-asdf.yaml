@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Batect"
+  feature_name: "Batect (via asdf)"
+  feature_id: "batect-asdf"
+  test_command: "batect --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "batect"
+      display_name: "Batect"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

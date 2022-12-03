@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs step"
+  feature_name: "step (via asdf)"
+  feature_id: "step-asdf"
+  test_command: "step --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "step"
+      display_name: "step"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

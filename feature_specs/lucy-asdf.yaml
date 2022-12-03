@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Lucy"
+  feature_name: "Lucy (via asdf)"
+  feature_id: "lucy-asdf"
+  test_command: "lucy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "lucy"
+      display_name: "Lucy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

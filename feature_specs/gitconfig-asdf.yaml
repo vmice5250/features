@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gitconfig"
+  feature_name: "gitconfig (via asdf)"
+  feature_id: "gitconfig-asdf"
+  test_command: "gitconfig --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gitconfig"
+      display_name: "gitconfig"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

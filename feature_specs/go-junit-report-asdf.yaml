@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs go-junit-report"
+  feature_name: "go-junit-report (via asdf)"
+  feature_id: "go-junit-report-asdf"
+  test_command: "go-junit-report --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "go-junit-report"
+      display_name: "go-junit-report"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

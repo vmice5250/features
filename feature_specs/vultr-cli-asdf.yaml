@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs vultr-cli"
+  feature_name: "vultr-cli (via asdf)"
+  feature_id: "vultr-cli-asdf"
+  test_command: "vultr-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "vultr-cli"
+      display_name: "vultr-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

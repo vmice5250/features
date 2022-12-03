@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Io"
+  feature_name: "Io (via asdf)"
+  feature_id: "io-asdf"
+  test_command: "io --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "io"
+      display_name: "Io"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

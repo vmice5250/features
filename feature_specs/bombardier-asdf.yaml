@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bombardier"
+  feature_name: "Bombardier (via asdf)"
+  feature_id: "bombardier-asdf"
+  test_command: "bombardier --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bombardier"
+      display_name: "Bombardier"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs heroku-cli"
+  feature_name: "heroku-cli (via asdf)"
+  feature_id: "heroku-cli-asdf"
+  test_command: "heroku-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "heroku-cli"
+      display_name: "heroku-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs osqueryi"
+  feature_name: "osqueryi (via asdf)"
+  feature_id: "osqueryi-asdf"
+  test_command: "osqueryi --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "osqueryi"
+      display_name: "osqueryi"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

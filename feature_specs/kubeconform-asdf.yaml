@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kubeconform"
+  feature_name: "kubeconform (via asdf)"
+  feature_id: "kubeconform-asdf"
+  test_command: "kubeconform --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubeconform"
+      display_name: "kubeconform"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

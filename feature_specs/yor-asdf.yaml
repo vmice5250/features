@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Yor"
+  feature_name: "Yor (via asdf)"
+  feature_id: "yor-asdf"
+  test_command: "yor --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "yor"
+      display_name: "Yor"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

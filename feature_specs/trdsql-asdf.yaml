@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Trdsql"
+  feature_name: "Trdsql (via asdf)"
+  feature_id: "trdsql-asdf"
+  test_command: "trdsql --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "trdsql"
+      display_name: "Trdsql"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

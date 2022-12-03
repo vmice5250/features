@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfctl"
+  feature_name: "tfctl (via asdf)"
+  feature_id: "tfctl-asdf"
+  test_command: "tfctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfctl"
+      display_name: "tfctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

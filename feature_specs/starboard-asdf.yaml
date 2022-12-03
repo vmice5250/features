@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs starboard"
+  feature_name: "starboard (via asdf)"
+  feature_id: "starboard-asdf"
+  test_command: "starboard --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "starboard"
+      display_name: "starboard"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mage"
+  feature_name: "mage (via asdf)"
+  feature_id: "mage-asdf"
+  test_command: "mage --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mage"
+      display_name: "mage"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

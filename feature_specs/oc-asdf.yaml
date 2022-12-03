@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs oc"
+  feature_name: "oc (via asdf)"
+  feature_id: "oc-asdf"
+  test_command: "oc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "oc"
+      display_name: "oc"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

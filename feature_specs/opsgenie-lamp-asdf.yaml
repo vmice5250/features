@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Opsgenie-lamp"
+  feature_name: "Opsgenie-lamp (via asdf)"
+  feature_id: "opsgenie-lamp-asdf"
+  test_command: "opsgenie-lamp --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "opsgenie-lamp"
+      display_name: "Opsgenie-lamp"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

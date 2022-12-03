@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Fluxctl"
+  feature_name: "Fluxctl (via asdf)"
+  feature_id: "fluxctl-asdf"
+  test_command: "fluxctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "fluxctl"
+      display_name: "Fluxctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

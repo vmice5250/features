@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kube-capacity"
+  feature_name: "kube-capacity (via asdf)"
+  feature_id: "kube-capacity-asdf"
+  test_command: "kube-capacity --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kube-capacity"
+      display_name: "kube-capacity"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs fd"
+  feature_name: "fd (via asdf)"
+  feature_id: "fd-asdf"
+  test_command: "fd --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "fd"
+      display_name: "fd"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

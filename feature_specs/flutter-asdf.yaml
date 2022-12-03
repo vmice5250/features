@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Flutter"
+  feature_name: "Flutter (via asdf)"
+  feature_id: "flutter-asdf"
+  test_command: "flutter --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "flutter"
+      display_name: "Flutter"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

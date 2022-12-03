@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs riak"
+  feature_name: "riak (via asdf)"
+  feature_id: "riak-asdf"
+  test_command: "riak --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "riak"
+      display_name: "riak"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

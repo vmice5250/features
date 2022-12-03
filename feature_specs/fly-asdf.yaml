@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs fly"
+  feature_name: "fly (via asdf)"
+  feature_id: "fly-asdf"
+  test_command: "fly --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "fly"
+      display_name: "fly"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

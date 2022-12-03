@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kompose"
+  feature_name: "kompose (via asdf)"
+  feature_id: "kompose-asdf"
+  test_command: "kompose --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kompose"
+      display_name: "kompose"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

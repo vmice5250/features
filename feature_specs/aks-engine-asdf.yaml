@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aks-engine"
+  feature_name: "aks-engine (via asdf)"
+  feature_id: "aks-engine-asdf"
+  test_command: "aks-engine --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aks-engine"
+      display_name: "aks-engine"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

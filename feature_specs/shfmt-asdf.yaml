@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Shfmt"
+  feature_name: "Shfmt (via asdf)"
+  feature_id: "shfmt-asdf"
+  test_command: "shfmt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "shfmt"
+      display_name: "Shfmt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs lab"
+  feature_name: "lab (via asdf)"
+  feature_id: "lab-asdf"
+  test_command: "lab --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "lab"
+      display_name: "lab"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

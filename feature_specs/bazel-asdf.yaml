@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bazel"
+  feature_name: "Bazel (via asdf)"
+  feature_id: "bazel-asdf"
+  test_command: "bazel --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bazel"
+      display_name: "Bazel"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

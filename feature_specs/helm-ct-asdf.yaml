@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Helm Chart Tester"
+  feature_name: "Helm Chart Tester (via asdf)"
+  feature_id: "helm-ct-asdf"
+  test_command: "helm-ct --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helm-ct"
+      display_name: "Helm Chart Tester"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

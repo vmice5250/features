@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kops"
+  feature_name: "Kops (via asdf)"
+  feature_id: "kops-asdf"
+  test_command: "kops --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kops"
+      display_name: "Kops"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

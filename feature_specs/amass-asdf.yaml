@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs amass"
+  feature_name: "amass (via asdf)"
+  feature_id: "amass-asdf"
+  test_command: "amass --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "amass"
+      display_name: "amass"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

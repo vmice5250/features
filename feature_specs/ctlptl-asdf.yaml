@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ctlptl"
+  feature_name: "ctlptl (via asdf)"
+  feature_id: "ctlptl-asdf"
+  test_command: "ctlptl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ctlptl"
+      display_name: "ctlptl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

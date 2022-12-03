@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Okteto"
+  feature_name: "Okteto (via asdf)"
+  feature_id: "okteto-asdf"
+  test_command: "okteto --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "okteto"
+      display_name: "Okteto"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

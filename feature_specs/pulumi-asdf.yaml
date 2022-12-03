@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Pulumi"
+  feature_name: "Pulumi (via asdf)"
+  feature_id: "pulumi-asdf"
+  test_command: "pulumi --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pulumi"
+      display_name: "Pulumi"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

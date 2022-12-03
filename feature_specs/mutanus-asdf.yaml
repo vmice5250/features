@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mutanus"
+  feature_name: "mutanus (via asdf)"
+  feature_id: "mutanus-asdf"
+  test_command: "mutanus --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mutanus"
+      display_name: "mutanus"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

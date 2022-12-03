@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gam"
+  feature_name: "gam (via asdf)"
+  feature_id: "gam-asdf"
+  test_command: "gam --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gam"
+      display_name: "gam"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

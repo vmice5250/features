@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs WASM-4"
+  feature_name: "WASM-4 (via asdf)"
+  feature_id: "wasm4-asdf"
+  test_command: "wasm4 --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wasm4"
+      display_name: "WASM-4"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

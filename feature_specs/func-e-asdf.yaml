@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs func-e"
+  feature_name: "func-e (via asdf)"
+  feature_id: "func-e-asdf"
+  test_command: "func-e --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "func-e"
+      display_name: "func-e"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

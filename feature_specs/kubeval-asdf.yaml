@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubeval"
+  feature_name: "Kubeval (via asdf)"
+  feature_id: "kubeval-asdf"
+  test_command: "kubeval --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubeval"
+      display_name: "Kubeval"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

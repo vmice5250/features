@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kapp"
+  feature_name: "kapp (via asdf)"
+  feature_id: "kapp-asdf"
+  test_command: "kapp --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kapp"
+      display_name: "kapp"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

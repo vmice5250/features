@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Emscripten SDK"
+  feature_name: "Emscripten SDK (via asdf)"
+  feature_id: "emsdk-asdf"
+  test_command: "emsdk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "emsdk"
+      display_name: "Emscripten SDK"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

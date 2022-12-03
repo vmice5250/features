@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mark"
+  feature_name: "mark (via asdf)"
+  feature_id: "mark-asdf"
+  test_command: "mark --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mark"
+      display_name: "mark"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

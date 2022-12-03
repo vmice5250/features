@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Groovy"
+  feature_name: "Groovy (via asdf)"
+  feature_id: "groovy-asdf"
+  test_command: "groovy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "groovy"
+      display_name: "Groovy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

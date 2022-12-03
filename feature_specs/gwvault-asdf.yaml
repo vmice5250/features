@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gwvault"
+  feature_name: "gwvault (via asdf)"
+  feature_id: "gwvault-asdf"
+  test_command: "gwvault --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gwvault"
+      display_name: "gwvault"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs actionlint"
+  feature_name: "actionlint (via asdf)"
+  feature_id: "actionlint-asdf"
+  test_command: "actionlint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "actionlint"
+      display_name: "actionlint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

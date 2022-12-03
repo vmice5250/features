@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs swift"
+  feature_name: "swift (via asdf)"
+  feature_id: "swift-asdf"
+  test_command: "swift --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "swift"
+      display_name: "swift"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

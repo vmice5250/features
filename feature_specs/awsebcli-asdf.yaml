@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs awsebcli"
+  feature_name: "awsebcli (via asdf)"
+  feature_id: "awsebcli-asdf"
+  test_command: "awsebcli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "awsebcli"
+      display_name: "awsebcli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs XcodeGen"
+  feature_name: "XcodeGen (via asdf)"
+  feature_id: "xcodegen-asdf"
+  test_command: "xcodegen --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "xcodegen"
+      display_name: "XcodeGen"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

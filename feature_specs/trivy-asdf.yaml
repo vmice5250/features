@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Trivy"
+  feature_name: "Trivy (via asdf)"
+  feature_id: "trivy-asdf"
+  test_command: "trivy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "trivy"
+      display_name: "Trivy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

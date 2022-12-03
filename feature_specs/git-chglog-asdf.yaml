@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs git-chglog"
+  feature_name: "git-chglog (via asdf)"
+  feature_id: "git-chglog-asdf"
+  test_command: "git-chglog --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "git-chglog"
+      display_name: "git-chglog"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

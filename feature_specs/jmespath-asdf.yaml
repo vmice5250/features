@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs JMESPath"
+  feature_name: "JMESPath (via asdf)"
+  feature_id: "jmespath-asdf"
+  test_command: "jmespath --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jmespath"
+      display_name: "JMESPath"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

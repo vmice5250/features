@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs .Net"
+  feature_name: ".Net (via asdf)"
+  feature_id: "dotnet-asdf"
+  test_command: "dotnet --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dotnet"
+      display_name: ".Net"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Copper"
+  feature_name: "Copper (via asdf)"
+  feature_id: "copper-asdf"
+  test_command: "copper --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "copper"
+      display_name: "Copper"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

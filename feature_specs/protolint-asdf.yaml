@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs protolint"
+  feature_name: "protolint (via asdf)"
+  feature_id: "protolint-asdf"
+  test_command: "protolint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "protolint"
+      display_name: "protolint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Minishift"
+  feature_name: "Minishift (via asdf)"
+  feature_id: "minishift-asdf"
+  test_command: "minishift --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "minishift"
+      display_name: "Minishift"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

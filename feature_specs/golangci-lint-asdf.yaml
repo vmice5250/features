@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs golangci-lint"
+  feature_name: "golangci-lint (via asdf)"
+  feature_id: "golangci-lint-asdf"
+  test_command: "golangci-lint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "golangci-lint"
+      display_name: "golangci-lint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cargo-make"
+  feature_name: "cargo-make (via asdf)"
+  feature_id: "cargo-make-asdf"
+  test_command: "cargo-make --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cargo-make"
+      display_name: "cargo-make"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

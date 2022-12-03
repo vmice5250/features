@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs bosh"
+  feature_name: "bosh (via asdf)"
+  feature_id: "bosh-asdf"
+  test_command: "bosh --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bosh"
+      display_name: "bosh"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

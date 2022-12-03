@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs crc"
+  feature_name: "crc (via asdf)"
+  feature_id: "crc-asdf"
+  test_command: "crc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "crc"
+      display_name: "crc"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

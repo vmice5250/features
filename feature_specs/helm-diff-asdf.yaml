@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Helm Diff"
+  feature_name: "Helm Diff (via asdf)"
+  feature_id: "helm-diff-asdf"
+  test_command: "helm-diff --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helm-diff"
+      display_name: "Helm Diff"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

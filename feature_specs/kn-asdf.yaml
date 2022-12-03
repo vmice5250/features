@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kn"
+  feature_name: "kn (via asdf)"
+  feature_id: "kn-asdf"
+  test_command: "kn --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kn"
+      display_name: "kn"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

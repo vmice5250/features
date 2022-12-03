@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs helm-docs"
+  feature_name: "helm-docs (via asdf)"
+  feature_id: "helm-docs-asdf"
+  test_command: "helm-docs --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helm-docs"
+      display_name: "helm-docs"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

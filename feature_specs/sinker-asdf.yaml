@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Sinker"
+  feature_name: "Sinker (via asdf)"
+  feature_id: "sinker-asdf"
+  test_command: "sinker --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sinker"
+      display_name: "Sinker"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

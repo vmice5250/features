@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs etcd"
+  feature_name: "etcd (via asdf)"
+  feature_id: "etcd-asdf"
+  test_command: "etcd --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "etcd"
+      display_name: "etcd"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

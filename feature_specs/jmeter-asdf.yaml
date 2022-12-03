@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Apache Jmeter"
+  feature_name: "Apache Jmeter (via asdf)"
+  feature_id: "jmeter-asdf"
+  test_command: "jmeter --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jmeter"
+      display_name: "Apache Jmeter"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

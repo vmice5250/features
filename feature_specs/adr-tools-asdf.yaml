@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs adr-tools"
+  feature_name: "adr-tools (via asdf)"
+  feature_id: "adr-tools-asdf"
+  test_command: "adr-tools --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "adr-tools"
+      display_name: "adr-tools"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

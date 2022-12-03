@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfenv"
+  feature_name: "tfenv (via asdf)"
+  feature_id: "tfenv-asdf"
+  test_command: "tfenv --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfenv"
+      display_name: "tfenv"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

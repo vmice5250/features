@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Spago"
+  feature_name: "Spago (via asdf)"
+  feature_id: "spago-asdf"
+  test_command: "spago --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "spago"
+      display_name: "Spago"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

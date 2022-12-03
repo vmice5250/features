@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Popeye"
+  feature_name: "Popeye (via asdf)"
+  feature_id: "popeye-asdf"
+  test_command: "popeye --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "popeye"
+      display_name: "Popeye"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

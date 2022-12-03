@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs syft"
+  feature_name: "syft (via asdf)"
+  feature_id: "syft-asdf"
+  test_command: "syft --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "syft"
+      display_name: "syft"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

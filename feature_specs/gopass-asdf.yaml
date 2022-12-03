@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Gopass"
+  feature_name: "Gopass (via asdf)"
+  feature_id: "gopass-asdf"
+  test_command: "gopass --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gopass"
+      display_name: "Gopass"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

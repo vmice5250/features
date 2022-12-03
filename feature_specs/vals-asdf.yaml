@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs vals"
+  feature_name: "vals (via asdf)"
+  feature_id: "vals-asdf"
+  test_command: "vals --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "vals"
+      display_name: "vals"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

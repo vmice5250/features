@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs asciidoctorj"
+  feature_name: "asciidoctorj (via asdf)"
+  feature_id: "asciidoctorj-asdf"
+  test_command: "asciidoctorj --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "asciidoctorj"
+      display_name: "asciidoctorj"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

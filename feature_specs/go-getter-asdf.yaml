@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs go-getter"
+  feature_name: "go-getter (via asdf)"
+  feature_id: "go-getter-asdf"
+  test_command: "go-getter --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "go-getter"
+      display_name: "go-getter"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Rancher"
+  feature_name: "Rancher (via asdf)"
+  feature_id: "rancher-asdf"
+  test_command: "rancher --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rancher"
+      display_name: "Rancher"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Minikube"
+  feature_name: "Minikube (via asdf)"
+  feature_id: "minikube-asdf"
+  test_command: "minikube --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "minikube"
+      display_name: "Minikube"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

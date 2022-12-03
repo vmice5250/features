@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs argo"
+  feature_name: "argo (via asdf)"
+  feature_id: "argo-asdf"
+  test_command: "argo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "argo"
+      display_name: "argo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

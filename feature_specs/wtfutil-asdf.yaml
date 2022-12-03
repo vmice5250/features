@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Wtfutil"
+  feature_name: "Wtfutil (via asdf)"
+  feature_id: "wtfutil-asdf"
+  test_command: "wtfutil --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wtfutil"
+      display_name: "Wtfutil"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

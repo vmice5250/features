@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs bottom (btm)"
+  feature_name: "bottom (btm) (via asdf)"
+  feature_id: "bottom-asdf"
+  test_command: "bottom --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bottom"
+      display_name: "bottom (btm)"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

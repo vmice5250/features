@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs wasmtime"
+  feature_name: "wasmtime (via asdf)"
+  feature_id: "wasmtime-asdf"
+  test_command: "wasmtime --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wasmtime"
+      display_name: "wasmtime"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

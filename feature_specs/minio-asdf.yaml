@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Minio"
+  feature_name: "Minio (via asdf)"
+  feature_id: "minio-asdf"
+  test_command: "minio --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "minio"
+      display_name: "Minio"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

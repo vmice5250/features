@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs agebox"
+  feature_name: "agebox (via asdf)"
+  feature_id: "agebox-asdf"
+  test_command: "agebox --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "agebox"
+      display_name: "agebox"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

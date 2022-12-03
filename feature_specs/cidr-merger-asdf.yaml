@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cidr-merger"
+  feature_name: "cidr-merger (via asdf)"
+  feature_id: "cidr-merger-asdf"
+  test_command: "cidr-merger --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cidr-merger"
+      display_name: "cidr-merger"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs BTrace"
+  feature_name: "BTrace (via asdf)"
+  feature_id: "btrace-asdf"
+  test_command: "btrace --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "btrace"
+      display_name: "BTrace"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

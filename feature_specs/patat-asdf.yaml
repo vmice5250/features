@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs patat"
+  feature_name: "patat (via asdf)"
+  feature_id: "patat-asdf"
+  test_command: "patat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "patat"
+      display_name: "patat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

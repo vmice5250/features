@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Go"
+  feature_name: "Go (via asdf)"
+  feature_id: "golang-asdf"
+  test_command: "golang --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "golang"
+      display_name: "Go"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

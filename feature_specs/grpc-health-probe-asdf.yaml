@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs grpc-health-probe"
+  feature_name: "grpc-health-probe (via asdf)"
+  feature_id: "grpc-health-probe-asdf"
+  test_command: "grpc-health-probe --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "grpc-health-probe"
+      display_name: "grpc-health-probe"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

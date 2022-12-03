@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs stripe-cli"
+  feature_name: "stripe-cli (via asdf)"
+  feature_id: "stripe-cli-asdf"
+  test_command: "stripe-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "stripe-cli"
+      display_name: "stripe-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

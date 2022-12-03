@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Sourcery"
+  feature_name: "Sourcery (via asdf)"
+  feature_id: "sourcery-asdf"
+  test_command: "sourcery --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sourcery"
+      display_name: "Sourcery"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs container-diff"
+  feature_name: "container-diff (via asdf)"
+  feature_id: "container-diff-asdf"
+  test_command: "container-diff --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "container-diff"
+      display_name: "container-diff"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

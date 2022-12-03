@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kubectl-bindrole"
+  feature_name: "kubectl-bindrole (via asdf)"
+  feature_id: "kubectl-bindrole-asdf"
+  test_command: "kubectl-bindrole --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubectl-bindrole"
+      display_name: "kubectl-bindrole"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

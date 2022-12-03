@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cilium-cli"
+  feature_name: "cilium-cli (via asdf)"
+  feature_id: "cilium-cli-asdf"
+  test_command: "cilium-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cilium-cli"
+      display_name: "cilium-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

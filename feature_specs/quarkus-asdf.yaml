@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Quarkus CLI"
+  feature_name: "Quarkus CLI (via asdf)"
+  feature_id: "quarkus-asdf"
+  test_command: "quarkus --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "quarkus"
+      display_name: "Quarkus CLI"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

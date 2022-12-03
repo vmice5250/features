@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs assh"
+  feature_name: "assh (via asdf)"
+  feature_id: "assh-asdf"
+  test_command: "assh --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "assh"
+      display_name: "assh"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

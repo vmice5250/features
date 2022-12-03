@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs imgpkg"
+  feature_name: "imgpkg (via asdf)"
+  feature_id: "imgpkg-asdf"
+  test_command: "imgpkg --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "imgpkg"
+      display_name: "imgpkg"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

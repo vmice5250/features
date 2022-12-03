@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gojq"
+  feature_name: "gojq (via asdf)"
+  feature_id: "gojq-asdf"
+  test_command: "gojq --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gojq"
+      display_name: "gojq"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

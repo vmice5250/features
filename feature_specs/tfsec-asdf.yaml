@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs TFSec"
+  feature_name: "TFSec (via asdf)"
+  feature_id: "tfsec-asdf"
+  test_command: "tfsec --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfsec"
+      display_name: "TFSec"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

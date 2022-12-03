@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kubectx"
+  feature_name: "kubectx (via asdf)"
+  feature_id: "kubectx-asdf"
+  test_command: "kubectx --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubectx"
+      display_name: "kubectx"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

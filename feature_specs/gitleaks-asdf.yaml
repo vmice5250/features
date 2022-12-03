@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Gitleaks"
+  feature_name: "Gitleaks (via asdf)"
+  feature_id: "gitleaks-asdf"
+  test_command: "gitleaks --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gitleaks"
+      display_name: "Gitleaks"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

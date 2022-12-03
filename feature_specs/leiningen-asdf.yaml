@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Leiningen"
+  feature_name: "Leiningen (via asdf)"
+  feature_id: "leiningen-asdf"
+  test_command: "leiningen --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "leiningen"
+      display_name: "Leiningen"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

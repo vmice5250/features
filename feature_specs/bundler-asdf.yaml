@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bundler"
+  feature_name: "Bundler (via asdf)"
+  feature_id: "bundler-asdf"
+  test_command: "bundler --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bundler"
+      display_name: "Bundler"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs getenvoy"
+  feature_name: "getenvoy (via asdf)"
+  feature_id: "getenvoy-asdf"
+  test_command: "getenvoy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "getenvoy"
+      display_name: "getenvoy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

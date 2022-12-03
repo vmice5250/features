@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Elixir"
+  feature_name: "Elixir (via asdf)"
+  feature_id: "elixir-asdf"
+  test_command: "elixir --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "elixir"
+      display_name: "Elixir"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

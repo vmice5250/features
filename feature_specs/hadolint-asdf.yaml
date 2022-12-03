@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs hadolint"
+  feature_name: "hadolint (via asdf)"
+  feature_id: "hadolint-asdf"
+  test_command: "hadolint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hadolint"
+      display_name: "hadolint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

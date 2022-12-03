@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfmigrate"
+  feature_name: "tfmigrate (via asdf)"
+  feature_id: "tfmigrate-asdf"
+  test_command: "tfmigrate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfmigrate"
+      display_name: "tfmigrate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

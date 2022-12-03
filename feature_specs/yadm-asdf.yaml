@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs yadm"
+  feature_name: "yadm (via asdf)"
+  feature_id: "yadm-asdf"
+  test_command: "yadm --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "yadm"
+      display_name: "yadm"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

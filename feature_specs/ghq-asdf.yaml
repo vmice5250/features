@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ghq"
+  feature_name: "ghq (via asdf)"
+  feature_id: "ghq-asdf"
+  test_command: "ghq --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ghq"
+      display_name: "ghq"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SQLite"
+  feature_name: "SQLite (via asdf)"
+  feature_id: "sqlite-asdf"
+  test_command: "sqlite --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sqlite"
+      display_name: "SQLite"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

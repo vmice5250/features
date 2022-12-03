@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs DevSpace"
+  feature_name: "DevSpace (via asdf)"
+  feature_id: "devspace-asdf"
+  test_command: "devspace --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "devspace"
+      display_name: "DevSpace"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

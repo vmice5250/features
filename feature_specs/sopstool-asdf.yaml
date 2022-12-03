@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs sopstool"
+  feature_name: "sopstool (via asdf)"
+  feature_id: "sopstool-asdf"
+  test_command: "sopstool --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sopstool"
+      display_name: "sopstool"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

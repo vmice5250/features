@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Node.js"
+  feature_name: "Node.js (via asdf)"
+  feature_id: "nodejs-asdf"
+  test_command: "nodejs --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nodejs"
+      display_name: "Node.js"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

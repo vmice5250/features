@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Helmfile"
+  feature_name: "Helmfile (via asdf)"
+  feature_id: "helmfile-asdf"
+  test_command: "helmfile --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helmfile"
+      display_name: "Helmfile"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

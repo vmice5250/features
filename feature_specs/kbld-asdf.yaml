@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kbld"
+  feature_name: "kbld (via asdf)"
+  feature_id: "kbld-asdf"
+  test_command: "kbld --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kbld"
+      display_name: "kbld"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

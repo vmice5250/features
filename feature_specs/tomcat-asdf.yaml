@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tomcat"
+  feature_name: "tomcat (via asdf)"
+  feature_id: "tomcat-asdf"
+  test_command: "tomcat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tomcat"
+      display_name: "tomcat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

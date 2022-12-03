@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Minio Client"
+  feature_name: "Minio Client (via asdf)"
+  feature_id: "mc-asdf"
+  test_command: "mc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mc"
+      display_name: "Minio Client"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Gitsign"
+  feature_name: "Gitsign (via asdf)"
+  feature_id: "gitsign-asdf"
+  test_command: "gitsign --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gitsign"
+      display_name: "Gitsign"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

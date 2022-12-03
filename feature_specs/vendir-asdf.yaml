@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs vendir"
+  feature_name: "vendir (via asdf)"
+  feature_id: "vendir-asdf"
+  test_command: "vendir --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "vendir"
+      display_name: "vendir"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

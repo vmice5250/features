@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs MongoDB"
+  feature_name: "MongoDB (via asdf)"
+  feature_id: "mongodb-asdf"
+  test_command: "mongodb --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mongodb"
+      display_name: "MongoDB"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

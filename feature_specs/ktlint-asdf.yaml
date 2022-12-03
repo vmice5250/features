@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ktlint"
+  feature_name: "ktlint (via asdf)"
+  feature_id: "ktlint-asdf"
+  test_command: "ktlint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ktlint"
+      display_name: "ktlint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

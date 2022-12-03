@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Ksonnet"
+  feature_name: "Ksonnet (via asdf)"
+  feature_id: "ksonnet-asdf"
+  test_command: "ksonnet --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ksonnet"
+      display_name: "Ksonnet"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Tanka"
+  feature_name: "Tanka (via asdf)"
+  feature_id: "tanka-asdf"
+  test_command: "tanka --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tanka"
+      display_name: "Tanka"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

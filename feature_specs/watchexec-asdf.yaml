@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs watchexec"
+  feature_name: "watchexec (via asdf)"
+  feature_id: "watchexec-asdf"
+  test_command: "watchexec --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "watchexec"
+      display_name: "watchexec"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

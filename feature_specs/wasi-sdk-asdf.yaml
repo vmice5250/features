@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs WASI SDK"
+  feature_name: "WASI SDK (via asdf)"
+  feature_id: "wasi-sdk-asdf"
+  test_command: "wasi-sdk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wasi-sdk"
+      display_name: "WASI SDK"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

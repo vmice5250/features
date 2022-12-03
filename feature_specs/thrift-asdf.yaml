@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Thrift"
+  feature_name: "Thrift (via asdf)"
+  feature_id: "thrift-asdf"
+  test_command: "thrift --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "thrift"
+      display_name: "Thrift"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

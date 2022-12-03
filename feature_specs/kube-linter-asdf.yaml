@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kube-linter"
+  feature_name: "kube-linter (via asdf)"
+  feature_id: "kube-linter-asdf"
+  test_command: "kube-linter --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kube-linter"
+      display_name: "kube-linter"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

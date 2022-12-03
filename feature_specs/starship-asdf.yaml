@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs starship"
+  feature_name: "starship (via asdf)"
+  feature_id: "starship-asdf"
+  test_command: "starship --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "starship"
+      display_name: "starship"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hurl"
+  feature_name: "Hurl (via asdf)"
+  feature_id: "hurl-asdf"
+  test_command: "hurl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hurl"
+      display_name: "Hurl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

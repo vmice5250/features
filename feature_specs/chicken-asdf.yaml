@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs CHICKEN"
+  feature_name: "CHICKEN (via asdf)"
+  feature_id: "chicken-asdf"
+  test_command: "chicken --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "chicken"
+      display_name: "CHICKEN"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs telepresence"
+  feature_name: "telepresence (via asdf)"
+  feature_id: "telepresence-asdf"
+  test_command: "telepresence --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "telepresence"
+      display_name: "telepresence"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

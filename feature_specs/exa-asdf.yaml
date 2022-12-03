@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs exa"
+  feature_name: "exa (via asdf)"
+  feature_id: "exa-asdf"
+  test_command: "exa --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "exa"
+      display_name: "exa"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

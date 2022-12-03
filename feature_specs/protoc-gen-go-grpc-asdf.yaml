@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs protoc-gen-go-grpc"
+  feature_name: "protoc-gen-go-grpc (via asdf)"
+  feature_id: "protoc-gen-go-grpc-asdf"
+  test_command: "protoc-gen-go-grpc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "protoc-gen-go-grpc"
+      display_name: "protoc-gen-go-grpc"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

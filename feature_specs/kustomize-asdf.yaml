@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kustomize"
+  feature_name: "Kustomize (via asdf)"
+  feature_id: "kustomize-asdf"
+  test_command: "kustomize --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kustomize"
+      display_name: "Kustomize"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

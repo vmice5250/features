@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs duf"
+  feature_name: "duf (via asdf)"
+  feature_id: "duf-asdf"
+  test_command: "duf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "duf"
+      display_name: "duf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

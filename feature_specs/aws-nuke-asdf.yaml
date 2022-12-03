@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aws-nuke"
+  feature_name: "aws-nuke (via asdf)"
+  feature_id: "aws-nuke-asdf"
+  test_command: "aws-nuke --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aws-nuke"
+      display_name: "aws-nuke"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

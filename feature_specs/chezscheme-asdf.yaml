@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs chezscheme"
+  feature_name: "chezscheme (via asdf)"
+  feature_id: "chezscheme-asdf"
+  test_command: "chezscheme --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "chezscheme"
+      display_name: "chezscheme"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

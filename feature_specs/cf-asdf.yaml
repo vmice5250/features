@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cf"
+  feature_name: "cf (via asdf)"
+  feature_id: "cf-asdf"
+  test_command: "cf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cf"
+      display_name: "cf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs lazygit"
+  feature_name: "lazygit (via asdf)"
+  feature_id: "lazygit-asdf"
+  test_command: "lazygit --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "lazygit"
+      display_name: "lazygit"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

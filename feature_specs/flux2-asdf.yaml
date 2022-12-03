@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Flux2"
+  feature_name: "Flux2 (via asdf)"
+  feature_id: "flux2-asdf"
+  test_command: "flux2 --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "flux2"
+      display_name: "Flux2"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

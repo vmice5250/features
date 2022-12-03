@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hugo"
+  feature_name: "Hugo (via asdf)"
+  feature_id: "hugo-asdf"
+  test_command: "hugo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hugo"
+      display_name: "Hugo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

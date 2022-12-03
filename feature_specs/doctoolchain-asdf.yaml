@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs docToolchain"
+  feature_name: "docToolchain (via asdf)"
+  feature_id: "doctoolchain-asdf"
+  test_command: "doctoolchain --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "doctoolchain"
+      display_name: "docToolchain"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

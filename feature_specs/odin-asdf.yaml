@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Odin"
+  feature_name: "Odin (via asdf)"
+  feature_id: "odin-asdf"
+  test_command: "odin --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "odin"
+      display_name: "Odin"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

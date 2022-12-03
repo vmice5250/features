@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs fx"
+  feature_name: "fx (via asdf)"
+  feature_id: "fx-asdf"
+  test_command: "fx --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "fx"
+      display_name: "fx"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

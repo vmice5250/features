@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hasura-cli"
+  feature_name: "Hasura-cli (via asdf)"
+  feature_id: "hasura-cli-asdf"
+  test_command: "hasura-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hasura-cli"
+      display_name: "Hasura-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

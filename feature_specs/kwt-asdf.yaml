@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kwt"
+  feature_name: "kwt (via asdf)"
+  feature_id: "kwt-asdf"
+  test_command: "kwt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kwt"
+      display_name: "kwt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs yay"
+  feature_name: "yay (via asdf)"
+  feature_id: "yay-asdf"
+  test_command: "yay --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "yay"
+      display_name: "yay"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

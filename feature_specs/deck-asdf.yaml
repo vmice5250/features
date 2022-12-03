@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Deck"
+  feature_name: "Deck (via asdf)"
+  feature_id: "deck-asdf"
+  test_command: "deck --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "deck"
+      display_name: "Deck"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

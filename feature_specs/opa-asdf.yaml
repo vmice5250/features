@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs OPA"
+  feature_name: "OPA (via asdf)"
+  feature_id: "opa-asdf"
+  test_command: "opa --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "opa"
+      display_name: "OPA"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

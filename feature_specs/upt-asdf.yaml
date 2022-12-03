@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs upt"
+  feature_name: "upt (via asdf)"
+  feature_id: "upt-asdf"
+  test_command: "upt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "upt"
+      display_name: "upt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

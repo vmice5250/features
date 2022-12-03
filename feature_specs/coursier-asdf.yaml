@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs coursier"
+  feature_name: "coursier (via asdf)"
+  feature_id: "coursier-asdf"
+  test_command: "coursier --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "coursier"
+      display_name: "coursier"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

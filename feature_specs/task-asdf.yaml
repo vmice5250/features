@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Task"
+  feature_name: "Task (via asdf)"
+  feature_id: "task-asdf"
+  test_command: "task --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "task"
+      display_name: "Task"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

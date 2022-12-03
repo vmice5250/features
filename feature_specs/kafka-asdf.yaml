@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kafka"
+  feature_name: "kafka (via asdf)"
+  feature_id: "kafka-asdf"
+  test_command: "kafka --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kafka"
+      display_name: "kafka"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

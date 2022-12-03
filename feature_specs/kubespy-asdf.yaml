@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kubespy"
+  feature_name: "kubespy (via asdf)"
+  feature_id: "kubespy-asdf"
+  test_command: "kubespy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubespy"
+      display_name: "kubespy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

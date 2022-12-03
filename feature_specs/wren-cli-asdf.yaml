@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Wren CLI"
+  feature_name: "Wren CLI (via asdf)"
+  feature_id: "wren-cli-asdf"
+  test_command: "wren-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wren-cli"
+      display_name: "Wren CLI"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

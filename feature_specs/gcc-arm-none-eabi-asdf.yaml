@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gcc-arm-none-eabi"
+  feature_name: "gcc-arm-none-eabi (via asdf)"
+  feature_id: "gcc-arm-none-eabi-asdf"
+  test_command: "gcc-arm-none-eabi --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gcc-arm-none-eabi"
+      display_name: "gcc-arm-none-eabi"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

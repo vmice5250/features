@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs semver"
+  feature_name: "semver (via asdf)"
+  feature_id: "semver-asdf"
+  test_command: "semver --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "semver"
+      display_name: "semver"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

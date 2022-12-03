@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Conform"
+  feature_name: "Conform (via asdf)"
+  feature_id: "conform-asdf"
+  test_command: "conform --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "conform"
+      display_name: "Conform"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

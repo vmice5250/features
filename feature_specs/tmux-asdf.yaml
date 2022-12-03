@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Tmux"
+  feature_name: "Tmux (via asdf)"
+  feature_id: "tmux-asdf"
+  test_command: "tmux --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tmux"
+      display_name: "Tmux"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs docuum"
+  feature_name: "docuum (via asdf)"
+  feature_id: "docuum-asdf"
+  test_command: "docuum --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "docuum"
+      display_name: "docuum"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

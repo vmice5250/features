@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Zola"
+  feature_name: "Zola (via asdf)"
+  feature_id: "zola-asdf"
+  test_command: "zola --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "zola"
+      display_name: "Zola"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

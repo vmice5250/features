@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ctop"
+  feature_name: "ctop (via asdf)"
+  feature_id: "ctop-asdf"
+  test_command: "ctop --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ctop"
+      display_name: "ctop"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

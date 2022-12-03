@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs protoc-gen-go"
+  feature_name: "protoc-gen-go (via asdf)"
+  feature_id: "protoc-gen-go-asdf"
+  test_command: "protoc-gen-go --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "protoc-gen-go"
+      display_name: "protoc-gen-go"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

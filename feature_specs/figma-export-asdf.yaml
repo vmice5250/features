@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs figma-export"
+  feature_name: "figma-export (via asdf)"
+  feature_id: "figma-export-asdf"
+  test_command: "figma-export --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "figma-export"
+      display_name: "figma-export"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

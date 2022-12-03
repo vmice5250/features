@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs krew"
+  feature_name: "krew (via asdf)"
+  feature_id: "krew-asdf"
+  test_command: "krew --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "krew"
+      display_name: "krew"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

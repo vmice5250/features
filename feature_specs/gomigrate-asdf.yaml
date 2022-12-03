@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Go Migrate"
+  feature_name: "Go Migrate (via asdf)"
+  feature_id: "gomigrate-asdf"
+  test_command: "gomigrate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gomigrate"
+      display_name: "Go Migrate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs nancy"
+  feature_name: "nancy (via asdf)"
+  feature_id: "nancy-asdf"
+  test_command: "nancy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nancy"
+      display_name: "nancy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

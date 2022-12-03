@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Rclone"
+  feature_name: "Rclone (via asdf)"
+  feature_id: "rclone-asdf"
+  test_command: "rclone --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rclone"
+      display_name: "Rclone"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

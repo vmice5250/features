@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs go-jira"
+  feature_name: "go-jira (via asdf)"
+  feature_id: "go-jira-asdf"
+  test_command: "go-jira --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "go-jira"
+      display_name: "go-jira"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

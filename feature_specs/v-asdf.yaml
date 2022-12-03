@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs V"
+  feature_name: "V (via asdf)"
+  feature_id: "v-asdf"
+  test_command: "v --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "v"
+      display_name: "V"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

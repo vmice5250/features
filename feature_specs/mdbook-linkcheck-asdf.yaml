@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mdbook-linkcheck"
+  feature_name: "mdbook-linkcheck (via asdf)"
+  feature_id: "mdbook-linkcheck-asdf"
+  test_command: "mdbook-linkcheck --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mdbook-linkcheck"
+      display_name: "mdbook-linkcheck"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

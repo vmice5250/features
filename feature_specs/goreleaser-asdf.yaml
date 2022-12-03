@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs GoReleaser"
+  feature_name: "GoReleaser (via asdf)"
+  feature_id: "goreleaser-asdf"
+  test_command: "goreleaser --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "goreleaser"
+      display_name: "GoReleaser"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

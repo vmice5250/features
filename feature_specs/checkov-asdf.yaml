@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs checkov"
+  feature_name: "checkov (via asdf)"
+  feature_id: "checkov-asdf"
+  test_command: "checkov --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "checkov"
+      display_name: "checkov"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

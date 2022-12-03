@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ImageMagick"
+  feature_name: "ImageMagick (via asdf)"
+  feature_id: "imagemagick-asdf"
+  test_command: "imagemagick --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "imagemagick"
+      display_name: "ImageMagick"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

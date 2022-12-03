@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kind"
+  feature_name: "Kind (via asdf)"
+  feature_id: "kind-asdf"
+  test_command: "kind --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kind"
+      display_name: "Kind"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

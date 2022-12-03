@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs crossplane-cli"
+  feature_name: "crossplane-cli (via asdf)"
+  feature_id: "crossplane-cli-asdf"
+  test_command: "crossplane-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "crossplane-cli"
+      display_name: "crossplane-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

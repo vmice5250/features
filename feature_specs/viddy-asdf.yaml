@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Viddy"
+  feature_name: "Viddy (via asdf)"
+  feature_id: "viddy-asdf"
+  test_command: "viddy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "viddy"
+      display_name: "Viddy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Zephyr"
+  feature_name: "Zephyr (via asdf)"
+  feature_id: "zephyr-asdf"
+  test_command: "zephyr --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "zephyr"
+      display_name: "Zephyr"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

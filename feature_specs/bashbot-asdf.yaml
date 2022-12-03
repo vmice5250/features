@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs bashbot"
+  feature_name: "bashbot (via asdf)"
+  feature_id: "bashbot-asdf"
+  test_command: "bashbot --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bashbot"
+      display_name: "bashbot"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

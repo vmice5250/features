@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mockery"
+  feature_name: "mockery (via asdf)"
+  feature_id: "mockery-asdf"
+  test_command: "mockery --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mockery"
+      display_name: "mockery"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

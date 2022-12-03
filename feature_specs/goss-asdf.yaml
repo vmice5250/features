@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Goss"
+  feature_name: "Goss (via asdf)"
+  feature_id: "goss-asdf"
+  test_command: "goss --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "goss"
+      display_name: "Goss"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

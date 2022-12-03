@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs wasmer"
+  feature_name: "wasmer (via asdf)"
+  feature_id: "wasmer-asdf"
+  test_command: "wasmer --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wasmer"
+      display_name: "wasmer"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Caddy"
+  feature_name: "Caddy (via asdf)"
+  feature_id: "caddy-asdf"
+  test_command: "caddy --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "caddy"
+      display_name: "Caddy"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

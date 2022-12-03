@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hyperfine"
+  feature_name: "Hyperfine (via asdf)"
+  feature_id: "hyperfine-asdf"
+  test_command: "hyperfine --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hyperfine"
+      display_name: "Hyperfine"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

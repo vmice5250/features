@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Clusterctl"
+  feature_name: "Clusterctl (via asdf)"
+  feature_id: "clusterctl-asdf"
+  test_command: "clusterctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "clusterctl"
+      display_name: "Clusterctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

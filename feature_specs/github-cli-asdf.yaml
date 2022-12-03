@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs GitHub CLI"
+  feature_name: "GitHub CLI (via asdf)"
+  feature_id: "github-cli-asdf"
+  test_command: "github-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "github-cli"
+      display_name: "GitHub CLI"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

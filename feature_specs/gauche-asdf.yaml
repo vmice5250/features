@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Gauche"
+  feature_name: "Gauche (via asdf)"
+  feature_id: "gauche-asdf"
+  test_command: "gauche --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gauche"
+      display_name: "Gauche"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

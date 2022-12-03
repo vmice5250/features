@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs XCTestHTMLReport"
+  feature_name: "XCTestHTMLReport (via asdf)"
+  feature_id: "xchtmlreport-asdf"
+  test_command: "xchtmlreport --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "xchtmlreport"
+      display_name: "XCTestHTMLReport"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

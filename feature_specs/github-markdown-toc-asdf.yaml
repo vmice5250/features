@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs GitHub Markdown ToC"
+  feature_name: "GitHub Markdown ToC (via asdf)"
+  feature_id: "github-markdown-toc-asdf"
+  test_command: "github-markdown-toc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "github-markdown-toc"
+      display_name: "GitHub Markdown ToC"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

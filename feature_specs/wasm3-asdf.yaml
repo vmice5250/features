@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs wasm3"
+  feature_name: "wasm3 (via asdf)"
+  feature_id: "wasm3-asdf"
+  test_command: "wasm3 --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "wasm3"
+      display_name: "wasm3"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

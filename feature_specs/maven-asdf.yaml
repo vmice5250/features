@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Maven"
+  feature_name: "Maven (via asdf)"
+  feature_id: "maven-asdf"
+  test_command: "maven --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "maven"
+      display_name: "Maven"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs regctl"
+  feature_name: "regctl (via asdf)"
+  feature_id: "regctl-asdf"
+  test_command: "regctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "regctl"
+      display_name: "regctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

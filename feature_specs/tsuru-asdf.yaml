@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tsuru"
+  feature_name: "tsuru (via asdf)"
+  feature_id: "tsuru-asdf"
+  test_command: "tsuru --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tsuru"
+      display_name: "tsuru"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

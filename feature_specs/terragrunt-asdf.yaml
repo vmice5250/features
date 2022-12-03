@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Terragrunt"
+  feature_name: "Terragrunt (via asdf)"
+  feature_id: "terragrunt-asdf"
+  test_command: "terragrunt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "terragrunt"
+      display_name: "Terragrunt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

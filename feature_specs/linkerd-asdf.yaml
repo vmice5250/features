@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Linkerd"
+  feature_name: "Linkerd (via asdf)"
+  feature_id: "linkerd-asdf"
+  test_command: "linkerd --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "linkerd"
+      display_name: "Linkerd"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

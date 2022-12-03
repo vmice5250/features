@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Tekton-cli"
+  feature_name: "Tekton-cli (via asdf)"
+  feature_id: "tekton-cli-asdf"
+  test_command: "tekton-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tekton-cli"
+      display_name: "Tekton-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

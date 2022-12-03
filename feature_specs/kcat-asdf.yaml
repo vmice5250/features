@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kcat"
+  feature_name: "kcat (via asdf)"
+  feature_id: "kcat-asdf"
+  test_command: "kcat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kcat"
+      display_name: "kcat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

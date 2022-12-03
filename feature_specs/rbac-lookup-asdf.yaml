@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Rbac-lookup"
+  feature_name: "Rbac-lookup (via asdf)"
+  feature_id: "rbac-lookup-asdf"
+  test_command: "rbac-lookup --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rbac-lookup"
+      display_name: "Rbac-lookup"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

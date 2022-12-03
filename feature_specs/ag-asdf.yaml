@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ag (the_silver_searcher)"
+  feature_name: "ag (the_silver_searcher) (via asdf)"
+  feature_id: "ag-asdf"
+  test_command: "ag --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ag"
+      display_name: "ag (the_silver_searcher)"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

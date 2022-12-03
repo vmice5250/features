@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubefedctl"
+  feature_name: "Kubefedctl (via asdf)"
+  feature_id: "kubefedctl-asdf"
+  test_command: "kubefedctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubefedctl"
+      display_name: "Kubefedctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

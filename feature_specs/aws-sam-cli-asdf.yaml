@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aws-sam-cli"
+  feature_name: "aws-sam-cli (via asdf)"
+  feature_id: "aws-sam-cli-asdf"
+  test_command: "aws-sam-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aws-sam-cli"
+      display_name: "aws-sam-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

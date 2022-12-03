@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hamler"
+  feature_name: "Hamler (via asdf)"
+  feature_id: "hamler-asdf"
+  test_command: "hamler --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hamler"
+      display_name: "Hamler"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

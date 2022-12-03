@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs protoc-gen-grpc-web"
+  feature_name: "protoc-gen-grpc-web (via asdf)"
+  feature_id: "protoc-gen-grpc-web-asdf"
+  test_command: "protoc-gen-grpc-web --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "protoc-gen-grpc-web"
+      display_name: "protoc-gen-grpc-web"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

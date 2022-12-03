@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs k3sup"
+  feature_name: "k3sup (via asdf)"
+  feature_id: "k3sup-asdf"
+  test_command: "k3sup --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "k3sup"
+      display_name: "k3sup"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Snyk"
+  feature_name: "Snyk (via asdf)"
+  feature_id: "snyk-asdf"
+  test_command: "snyk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "snyk"
+      display_name: "Snyk"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

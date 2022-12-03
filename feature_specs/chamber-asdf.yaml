@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs chamber"
+  feature_name: "chamber (via asdf)"
+  feature_id: "chamber-asdf"
+  test_command: "chamber --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "chamber"
+      display_name: "chamber"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

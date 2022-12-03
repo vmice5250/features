@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs stylua"
+  feature_name: "stylua (via asdf)"
+  feature_id: "stylua-asdf"
+  test_command: "stylua --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "stylua"
+      display_name: "stylua"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

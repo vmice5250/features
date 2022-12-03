@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Dbmate"
+  feature_name: "Dbmate (via asdf)"
+  feature_id: "dbmate-asdf"
+  test_command: "dbmate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dbmate"
+      display_name: "Dbmate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

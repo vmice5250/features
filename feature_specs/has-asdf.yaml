@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs has"
+  feature_name: "has (via asdf)"
+  feature_id: "has-asdf"
+  test_command: "has --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "has"
+      display_name: "has"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

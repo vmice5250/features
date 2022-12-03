@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs jx"
+  feature_name: "jx (via asdf)"
+  feature_id: "jx-asdf"
+  test_command: "jx --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jx"
+      display_name: "jx"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

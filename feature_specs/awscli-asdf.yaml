@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs awscli"
+  feature_name: "awscli (via asdf)"
+  feature_id: "awscli-asdf"
+  test_command: "awscli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "awscli"
+      display_name: "awscli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

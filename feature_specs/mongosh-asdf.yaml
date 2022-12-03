@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mongosh"
+  feature_name: "mongosh (via asdf)"
+  feature_id: "mongosh-asdf"
+  test_command: "mongosh --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mongosh"
+      display_name: "mongosh"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

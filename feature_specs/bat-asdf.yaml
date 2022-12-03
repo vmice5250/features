@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs bat"
+  feature_name: "bat (via asdf)"
+  feature_id: "bat-asdf"
+  test_command: "bat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bat"
+      display_name: "bat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

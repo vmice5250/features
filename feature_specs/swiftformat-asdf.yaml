@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SwiftFormat"
+  feature_name: "SwiftFormat (via asdf)"
+  feature_id: "swiftformat-asdf"
+  test_command: "swiftformat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "swiftformat"
+      display_name: "SwiftFormat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

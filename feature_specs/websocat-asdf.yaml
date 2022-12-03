@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Websocat"
+  feature_name: "Websocat (via asdf)"
+  feature_id: "websocat-asdf"
+  test_command: "websocat --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "websocat"
+      display_name: "Websocat"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

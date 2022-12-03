@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs jb"
+  feature_name: "jb (via asdf)"
+  feature_id: "jb-asdf"
+  test_command: "jb --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jb"
+      display_name: "jb"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

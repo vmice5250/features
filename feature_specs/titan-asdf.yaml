@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Titan"
+  feature_name: "Titan (via asdf)"
+  feature_id: "titan-asdf"
+  test_command: "titan --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "titan"
+      display_name: "Titan"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

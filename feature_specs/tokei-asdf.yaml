@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Tokei"
+  feature_name: "Tokei (via asdf)"
+  feature_id: "tokei-asdf"
+  test_command: "tokei --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tokei"
+      display_name: "Tokei"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

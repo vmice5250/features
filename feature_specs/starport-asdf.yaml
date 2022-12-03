@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs starport"
+  feature_name: "starport (via asdf)"
+  feature_id: "starport-asdf"
+  test_command: "starport --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "starport"
+      display_name: "starport"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

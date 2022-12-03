@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs k6"
+  feature_name: "k6 (via asdf)"
+  feature_id: "k6-asdf"
+  test_command: "k6 --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "k6"
+      display_name: "k6"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

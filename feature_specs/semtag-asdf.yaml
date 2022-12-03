@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs semtag"
+  feature_name: "semtag (via asdf)"
+  feature_id: "semtag-asdf"
+  test_command: "semtag --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "semtag"
+      display_name: "semtag"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

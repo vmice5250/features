@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Shellspec"
+  feature_name: "Shellspec (via asdf)"
+  feature_id: "shellspec-asdf"
+  test_command: "shellspec --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "shellspec"
+      display_name: "Shellspec"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

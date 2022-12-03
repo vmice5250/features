@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Reg"
+  feature_name: "Reg (via asdf)"
+  feature_id: "reg-asdf"
+  test_command: "reg --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "reg"
+      display_name: "Reg"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs difftastic"
+  feature_name: "difftastic (via asdf)"
+  feature_id: "difftastic-asdf"
+  test_command: "difftastic --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "difftastic"
+      display_name: "difftastic"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

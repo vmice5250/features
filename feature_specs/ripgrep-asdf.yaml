@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ripgrep"
+  feature_name: "ripgrep (via asdf)"
+  feature_id: "ripgrep-asdf"
+  test_command: "ripgrep --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ripgrep"
+      display_name: "ripgrep"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

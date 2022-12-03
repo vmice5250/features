@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Jsonnet"
+  feature_name: "Jsonnet (via asdf)"
+  feature_id: "jsonnet-asdf"
+  test_command: "jsonnet --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jsonnet"
+      display_name: "Jsonnet"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

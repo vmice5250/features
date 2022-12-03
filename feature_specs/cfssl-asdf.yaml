@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cfssl"
+  feature_name: "cfssl (via asdf)"
+  feature_id: "cfssl-asdf"
+  test_command: "cfssl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cfssl"
+      display_name: "cfssl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

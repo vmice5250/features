@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs glooctl"
+  feature_name: "glooctl (via asdf)"
+  feature_id: "glooctl-asdf"
+  test_command: "glooctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "glooctl"
+      display_name: "glooctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

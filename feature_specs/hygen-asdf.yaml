@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hygen"
+  feature_name: "Hygen (via asdf)"
+  feature_id: "hygen-asdf"
+  test_command: "hygen --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hygen"
+      display_name: "Hygen"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

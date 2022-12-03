@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs pnpm"
+  feature_name: "pnpm (via asdf)"
+  feature_id: "pnpm-asdf"
+  test_command: "pnpm --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pnpm"
+      display_name: "pnpm"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Ruby"
+  feature_name: "Ruby (via asdf)"
+  feature_id: "ruby-asdf"
+  test_command: "ruby --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ruby"
+      display_name: "Ruby"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Julia"
+  feature_name: "Julia (via asdf)"
+  feature_id: "julia-asdf"
+  test_command: "julia --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "julia"
+      display_name: "Julia"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

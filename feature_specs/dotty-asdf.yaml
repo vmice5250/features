@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dotty"
+  feature_name: "dotty (via asdf)"
+  feature_id: "dotty-asdf"
+  test_command: "dotty --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dotty"
+      display_name: "dotty"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

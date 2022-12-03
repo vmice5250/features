@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bats (Bash unittest)"
+  feature_name: "Bats (Bash unittest) (via asdf)"
+  feature_id: "bats-asdf"
+  test_command: "bats --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bats"
+      display_name: "Bats (Bash unittest)"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

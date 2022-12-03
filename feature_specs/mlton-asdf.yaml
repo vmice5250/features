@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mlton"
+  feature_name: "mlton (via asdf)"
+  feature_id: "mlton-asdf"
+  test_command: "mlton --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mlton"
+      display_name: "mlton"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

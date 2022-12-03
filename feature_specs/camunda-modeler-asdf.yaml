@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Camunda Modeler"
+  feature_name: "Camunda Modeler (via asdf)"
+  feature_id: "camunda-modeler-asdf"
+  test_command: "camunda-modeler --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "camunda-modeler"
+      display_name: "Camunda Modeler"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

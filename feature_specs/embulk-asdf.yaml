@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs embulk"
+  feature_name: "embulk (via asdf)"
+  feature_id: "embulk-asdf"
+  test_command: "embulk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "embulk"
+      display_name: "embulk"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

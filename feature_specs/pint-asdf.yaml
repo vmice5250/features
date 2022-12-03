@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs pint"
+  feature_name: "pint (via asdf)"
+  feature_id: "pint-asdf"
+  test_command: "pint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pint"
+      display_name: "pint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

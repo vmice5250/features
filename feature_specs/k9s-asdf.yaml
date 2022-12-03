@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs k9s"
+  feature_name: "k9s (via asdf)"
+  feature_id: "k9s-asdf"
+  test_command: "k9s --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "k9s"
+      display_name: "k9s"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

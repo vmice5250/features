@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aws-copilot"
+  feature_name: "aws-copilot (via asdf)"
+  feature_id: "aws-copilot-asdf"
+  test_command: "aws-copilot --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aws-copilot"
+      display_name: "aws-copilot"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

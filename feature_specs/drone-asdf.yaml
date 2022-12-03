@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs drone"
+  feature_name: "drone (via asdf)"
+  feature_id: "drone-asdf"
+  test_command: "drone --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "drone"
+      display_name: "drone"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

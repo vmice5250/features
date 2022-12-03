@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs xh"
+  feature_name: "xh (via asdf)"
+  feature_id: "xh-asdf"
+  test_command: "xh --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "xh"
+      display_name: "xh"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

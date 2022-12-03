@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tonnage"
+  feature_name: "tonnage (via asdf)"
+  feature_id: "tonnage-asdf"
+  test_command: "tonnage --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tonnage"
+      display_name: "tonnage"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

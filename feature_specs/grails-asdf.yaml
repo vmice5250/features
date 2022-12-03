@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Grails"
+  feature_name: "Grails (via asdf)"
+  feature_id: "grails-asdf"
+  test_command: "grails --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "grails"
+      display_name: "Grails"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

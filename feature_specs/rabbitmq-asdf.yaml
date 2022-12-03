@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs RabbitMQ"
+  feature_name: "RabbitMQ (via asdf)"
+  feature_id: "rabbitmq-asdf"
+  test_command: "rabbitmq --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rabbitmq"
+      display_name: "RabbitMQ"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

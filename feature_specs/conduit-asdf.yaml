@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Conduit"
+  feature_name: "Conduit (via asdf)"
+  feature_id: "conduit-asdf"
+  test_command: "conduit --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "conduit"
+      display_name: "Conduit"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

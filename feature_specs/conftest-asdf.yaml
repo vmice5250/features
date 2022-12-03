@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs conftest"
+  feature_name: "conftest (via asdf)"
+  feature_id: "conftest-asdf"
+  test_command: "conftest --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "conftest"
+      display_name: "conftest"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

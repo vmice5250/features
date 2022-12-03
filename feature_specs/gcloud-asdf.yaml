@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gcloud"
+  feature_name: "gcloud (via asdf)"
+  feature_id: "gcloud-asdf"
+  test_command: "gcloud --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gcloud"
+      display_name: "gcloud"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

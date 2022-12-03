@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfupdate"
+  feature_name: "tfupdate (via asdf)"
+  feature_id: "tfupdate-asdf"
+  test_command: "tfupdate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfupdate"
+      display_name: "tfupdate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

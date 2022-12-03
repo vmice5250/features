@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Zig"
+  feature_name: "Zig (via asdf)"
+  feature_id: "zig-asdf"
+  test_command: "zig --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "zig"
+      display_name: "Zig"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

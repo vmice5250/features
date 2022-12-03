@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs vela"
+  feature_name: "vela (via asdf)"
+  feature_id: "vela-asdf"
+  test_command: "vela --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "vela"
+      display_name: "vela"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

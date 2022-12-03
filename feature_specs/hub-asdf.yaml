@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Hub"
+  feature_name: "Hub (via asdf)"
+  feature_id: "hub-asdf"
+  test_command: "hub --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hub"
+      display_name: "Hub"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

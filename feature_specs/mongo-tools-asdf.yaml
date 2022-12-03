@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs mongo-tools"
+  feature_name: "mongo-tools (via asdf)"
+  feature_id: "mongo-tools-asdf"
+  test_command: "mongo-tools --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mongo-tools"
+      display_name: "mongo-tools"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

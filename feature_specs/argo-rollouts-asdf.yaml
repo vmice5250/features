@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs argo-rollouts"
+  feature_name: "argo-rollouts (via asdf)"
+  feature_id: "argo-rollouts-asdf"
+  test_command: "argo-rollouts --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "argo-rollouts"
+      display_name: "argo-rollouts"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

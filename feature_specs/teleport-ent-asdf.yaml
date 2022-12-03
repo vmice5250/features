@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Teleport Enterprise"
+  feature_name: "Teleport Enterprise (via asdf)"
+  feature_id: "teleport-ent-asdf"
+  test_command: "teleport-ent --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "teleport-ent"
+      display_name: "Teleport Enterprise"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

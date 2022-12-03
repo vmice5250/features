@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Spring Boot CLI"
+  feature_name: "Spring Boot CLI (via asdf)"
+  feature_id: "spring-boot-asdf"
+  test_command: "spring-boot --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "spring-boot"
+      display_name: "Spring Boot CLI"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

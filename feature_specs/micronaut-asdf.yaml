@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Micronaut"
+  feature_name: "Micronaut (via asdf)"
+  feature_id: "micronaut-asdf"
+  test_command: "micronaut --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "micronaut"
+      display_name: "Micronaut"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

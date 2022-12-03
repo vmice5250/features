@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs pluto"
+  feature_name: "pluto (via asdf)"
+  feature_id: "pluto-asdf"
+  test_command: "pluto --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pluto"
+      display_name: "pluto"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

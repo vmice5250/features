@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs zprint"
+  feature_name: "zprint (via asdf)"
+  feature_id: "zprint-asdf"
+  test_command: "zprint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "zprint"
+      display_name: "zprint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

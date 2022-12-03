@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs babashka"
+  feature_name: "babashka (via asdf)"
+  feature_id: "babashka-asdf"
+  test_command: "babashka --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "babashka"
+      display_name: "babashka"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

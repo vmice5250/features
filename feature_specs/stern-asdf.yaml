@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Stern"
+  feature_name: "Stern (via asdf)"
+  feature_id: "stern-asdf"
+  test_command: "stern --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "stern"
+      display_name: "Stern"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

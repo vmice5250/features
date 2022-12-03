@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ghorg"
+  feature_name: "ghorg (via asdf)"
+  feature_id: "ghorg-asdf"
+  test_command: "ghorg --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ghorg"
+      display_name: "ghorg"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

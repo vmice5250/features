@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs CodeQL"
+  feature_name: "CodeQL (via asdf)"
+  feature_id: "codeql-asdf"
+  test_command: "codeql --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "codeql"
+      display_name: "CodeQL"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

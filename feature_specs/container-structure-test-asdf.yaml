@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs container-structure-test"
+  feature_name: "container-structure-test (via asdf)"
+  feature_id: "container-structure-test-asdf"
+  test_command: "container-structure-test --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "container-structure-test"
+      display_name: "container-structure-test"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

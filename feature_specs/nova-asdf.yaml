@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs nova"
+  feature_name: "nova (via asdf)"
+  feature_id: "nova-asdf"
+  test_command: "nova --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nova"
+      display_name: "nova"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

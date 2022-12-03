@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Granted"
+  feature_name: "Granted (via asdf)"
+  feature_id: "granted-asdf"
+  test_command: "granted --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "granted"
+      display_name: "Granted"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

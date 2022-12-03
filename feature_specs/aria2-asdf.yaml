@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aria2"
+  feature_name: "aria2 (via asdf)"
+  feature_id: "aria2-asdf"
+  test_command: "aria2 --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aria2"
+      display_name: "aria2"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

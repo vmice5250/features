@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs yj"
+  feature_name: "yj (via asdf)"
+  feature_id: "yj-asdf"
+  test_command: "yj --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "yj"
+      display_name: "yj"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

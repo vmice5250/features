@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs azure-cli (az)"
+  feature_name: "azure-cli (az) (via asdf)"
+  feature_id: "azure-cli-asdf"
+  test_command: "azure-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "azure-cli"
+      display_name: "azure-cli (az)"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

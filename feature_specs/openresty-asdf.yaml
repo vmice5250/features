@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs OpenResty"
+  feature_name: "OpenResty (via asdf)"
+  feature_id: "openresty-asdf"
+  test_command: "openresty --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "openresty"
+      display_name: "OpenResty"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

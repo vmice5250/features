@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs odo"
+  feature_name: "odo (via asdf)"
+  feature_id: "odo-asdf"
+  test_command: "odo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "odo"
+      display_name: "odo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

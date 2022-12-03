@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Terraform-validator"
+  feature_name: "Terraform-validator (via asdf)"
+  feature_id: "terraform-validator-asdf"
+  test_command: "terraform-validator --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "terraform-validator"
+      display_name: "Terraform-validator"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

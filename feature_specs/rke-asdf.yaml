@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs RKE"
+  feature_name: "RKE (via asdf)"
+  feature_id: "rke-asdf"
+  test_command: "rke --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rke"
+      display_name: "RKE"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

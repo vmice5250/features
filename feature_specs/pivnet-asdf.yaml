@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs pivnet"
+  feature_name: "pivnet (via asdf)"
+  feature_id: "pivnet-asdf"
+  test_command: "pivnet --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pivnet"
+      display_name: "pivnet"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

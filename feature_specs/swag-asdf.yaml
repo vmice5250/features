@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs swag"
+  feature_name: "swag (via asdf)"
+  feature_id: "swag-asdf"
+  test_command: "swag --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "swag"
+      display_name: "swag"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

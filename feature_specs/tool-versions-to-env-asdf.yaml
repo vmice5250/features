@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tool-versions-to-env"
+  feature_name: "tool-versions-to-env (via asdf)"
+  feature_id: "tool-versions-to-env-asdf"
+  test_command: "tool-versions-to-env --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tool-versions-to-env"
+      display_name: "tool-versions-to-env"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

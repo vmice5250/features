@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Stack"
+  feature_name: "Stack (via asdf)"
+  feature_id: "stack-asdf"
+  test_command: "stack --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "stack"
+      display_name: "Stack"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

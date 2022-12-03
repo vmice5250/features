@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs D (DMD)"
+  feature_name: "D (DMD) (via asdf)"
+  feature_id: "dmd-asdf"
+  test_command: "dmd --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dmd"
+      display_name: "D (DMD)"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

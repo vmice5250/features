@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ant"
+  feature_name: "ant (via asdf)"
+  feature_id: "ant-asdf"
+  test_command: "ant --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ant"
+      display_name: "ant"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

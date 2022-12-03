@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dhall"
+  feature_name: "dhall (via asdf)"
+  feature_id: "dhall-asdf"
+  test_command: "dhall --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dhall"
+      display_name: "dhall"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

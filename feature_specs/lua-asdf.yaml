@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Lua"
+  feature_name: "Lua (via asdf)"
+  feature_id: "lua-asdf"
+  test_command: "lua --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "lua"
+      display_name: "Lua"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

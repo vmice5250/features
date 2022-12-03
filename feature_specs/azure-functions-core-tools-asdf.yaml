@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Azure Functions Core Tools"
+  feature_name: "Azure Functions Core Tools (via asdf)"
+  feature_id: "azure-functions-core-tools-asdf"
+  test_command: "azure-functions-core-tools --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "azure-functions-core-tools"
+      display_name: "Azure Functions Core Tools"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs bpkg"
+  feature_name: "bpkg (via asdf)"
+  feature_id: "bpkg-asdf"
+  test_command: "bpkg --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bpkg"
+      display_name: "bpkg"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

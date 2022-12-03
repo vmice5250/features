@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Rust"
+  feature_name: "Rust (via asdf)"
+  feature_id: "rust-asdf"
+  test_command: "rust --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rust"
+      display_name: "Rust"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

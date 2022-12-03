@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs usql"
+  feature_name: "usql (via asdf)"
+  feature_id: "usql-asdf"
+  test_command: "usql --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "usql"
+      display_name: "usql"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

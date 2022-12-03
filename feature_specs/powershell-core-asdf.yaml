@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs PowerShell"
+  feature_name: "PowerShell (via asdf)"
+  feature_id: "powershell-core-asdf"
+  test_command: "powershell-core --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "powershell-core"
+      display_name: "PowerShell"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

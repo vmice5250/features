@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Postgres"
+  feature_name: "Postgres (via asdf)"
+  feature_id: "postgres-asdf"
+  test_command: "postgres --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "postgres"
+      display_name: "Postgres"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

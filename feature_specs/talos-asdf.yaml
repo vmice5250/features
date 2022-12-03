@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Talos"
+  feature_name: "Talos (via asdf)"
+  feature_id: "talos-asdf"
+  test_command: "talos --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "talos"
+      display_name: "Talos"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs iam-policy-json-to-terraform"
+  feature_name: "iam-policy-json-to-terraform (via asdf)"
+  feature_id: "iam-policy-json-to-terraform-asdf"
+  test_command: "iam-policy-json-to-terraform --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "iam-policy-json-to-terraform"
+      display_name: "iam-policy-json-to-terraform"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

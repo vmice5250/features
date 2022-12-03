@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dotenv-linter"
+  feature_name: "dotenv-linter (via asdf)"
+  feature_id: "dotenv-linter-asdf"
+  test_command: "dotenv-linter --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dotenv-linter"
+      display_name: "dotenv-linter"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

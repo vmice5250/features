@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Logtalk"
+  feature_name: "Logtalk (via asdf)"
+  feature_id: "logtalk-asdf"
+  test_command: "logtalk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "logtalk"
+      display_name: "Logtalk"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

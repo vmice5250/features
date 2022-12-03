@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs docker-slim"
+  feature_name: "docker-slim (via asdf)"
+  feature_id: "docker-slim-asdf"
+  test_command: "docker-slim --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "docker-slim"
+      display_name: "docker-slim"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

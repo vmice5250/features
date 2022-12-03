@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Grain"
+  feature_name: "Grain (via asdf)"
+  feature_id: "grain-asdf"
+  test_command: "grain --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "grain"
+      display_name: "Grain"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

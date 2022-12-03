@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs k3d"
+  feature_name: "k3d (via asdf)"
+  feature_id: "k3d-asdf"
+  test_command: "k3d --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "k3d"
+      display_name: "k3d"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

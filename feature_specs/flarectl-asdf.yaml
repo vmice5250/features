@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs flarectl"
+  feature_name: "flarectl (via asdf)"
+  feature_id: "flarectl-asdf"
+  test_command: "flarectl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "flarectl"
+      display_name: "flarectl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

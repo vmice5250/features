@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dockle"
+  feature_name: "dockle (via asdf)"
+  feature_id: "dockle-asdf"
+  test_command: "dockle --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dockle"
+      display_name: "dockle"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

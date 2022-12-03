@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs allure"
+  feature_name: "allure (via asdf)"
+  feature_id: "allure-asdf"
+  test_command: "allure --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "allure"
+      display_name: "allure"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Neovim"
+  feature_name: "Neovim (via asdf)"
+  feature_id: "neovim-asdf"
+  test_command: "neovim --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "neovim"
+      display_name: "Neovim"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

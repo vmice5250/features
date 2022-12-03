@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Velero"
+  feature_name: "Velero (via asdf)"
+  feature_id: "velero-asdf"
+  test_command: "velero --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "velero"
+      display_name: "Velero"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

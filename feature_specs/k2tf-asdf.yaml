@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs k2tf"
+  feature_name: "k2tf (via asdf)"
+  feature_id: "k2tf-asdf"
+  test_command: "k2tf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "k2tf"
+      display_name: "k2tf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

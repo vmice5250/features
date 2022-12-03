@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs go-swagger"
+  feature_name: "go-swagger (via asdf)"
+  feature_id: "go-swagger-asdf"
+  test_command: "go-swagger --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "go-swagger"
+      display_name: "go-swagger"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

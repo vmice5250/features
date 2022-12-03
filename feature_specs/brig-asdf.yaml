@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Brig"
+  feature_name: "Brig (via asdf)"
+  feature_id: "brig-asdf"
+  test_command: "brig --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "brig"
+      display_name: "Brig"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

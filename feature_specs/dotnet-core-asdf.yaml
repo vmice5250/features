@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs .Net Core"
+  feature_name: ".Net Core (via asdf)"
+  feature_id: "dotnet-core-asdf"
+  test_command: "dotnet-core --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dotnet-core"
+      display_name: ".Net Core"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

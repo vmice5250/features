@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs alias"
+  feature_name: "alias (via asdf)"
+  feature_id: "alias-asdf"
+  test_command: "alias --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "alias"
+      display_name: "alias"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

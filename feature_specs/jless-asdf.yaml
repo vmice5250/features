@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs jless"
+  feature_name: "jless (via asdf)"
+  feature_id: "jless-asdf"
+  test_command: "jless --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jless"
+      display_name: "jless"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aws-vault"
+  feature_name: "aws-vault (via asdf)"
+  feature_id: "aws-vault-asdf"
+  test_command: "aws-vault --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aws-vault"
+      display_name: "aws-vault"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

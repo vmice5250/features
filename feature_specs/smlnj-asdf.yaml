@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs SML/NJ"
+  feature_name: "SML/NJ (via asdf)"
+  feature_id: "smlnj-asdf"
+  test_command: "smlnj --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "smlnj"
+      display_name: "SML/NJ"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

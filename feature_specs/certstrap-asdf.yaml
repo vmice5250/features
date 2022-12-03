@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs certstrap"
+  feature_name: "certstrap (via asdf)"
+  feature_id: "certstrap-asdf"
+  test_command: "certstrap --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "certstrap"
+      display_name: "certstrap"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Rebar"
+  feature_name: "Rebar (via asdf)"
+  feature_id: "rebar-asdf"
+  test_command: "rebar --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rebar"
+      display_name: "Rebar"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Loki-Logcli"
+  feature_name: "Loki-Logcli (via asdf)"
+  feature_id: "loki-logcli-asdf"
+  test_command: "loki-logcli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "loki-logcli"
+      display_name: "Loki-Logcli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

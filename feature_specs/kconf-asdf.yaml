@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kconf"
+  feature_name: "kconf (via asdf)"
+  feature_id: "kconf-asdf"
+  test_command: "kconf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kconf"
+      display_name: "kconf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

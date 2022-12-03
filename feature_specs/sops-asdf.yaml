@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Sops"
+  feature_name: "Sops (via asdf)"
+  feature_id: "sops-asdf"
+  test_command: "sops --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "sops"
+      display_name: "Sops"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

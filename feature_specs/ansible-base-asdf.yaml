@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ansible-base"
+  feature_name: "ansible-base (via asdf)"
+  feature_id: "ansible-base-asdf"
+  test_command: "ansible-base --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ansible-base"
+      display_name: "ansible-base"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

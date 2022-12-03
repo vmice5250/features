@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Mint"
+  feature_name: "Mint (via asdf)"
+  feature_id: "mint-asdf"
+  test_command: "mint --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "mint"
+      display_name: "Mint"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

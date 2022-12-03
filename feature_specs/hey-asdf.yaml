@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs hey"
+  feature_name: "hey (via asdf)"
+  feature_id: "hey-asdf"
+  test_command: "hey --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "hey"
+      display_name: "hey"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

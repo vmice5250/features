@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs tfstate-lookup"
+  feature_name: "tfstate-lookup (via asdf)"
+  feature_id: "tfstate-lookup-asdf"
+  test_command: "tfstate-lookup --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "tfstate-lookup"
+      display_name: "tfstate-lookup"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

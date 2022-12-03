@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Apollo Router"
+  feature_name: "Apollo Router (via asdf)"
+  feature_id: "apollo-router-asdf"
+  test_command: "apollo-router --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "apollo-router"
+      display_name: "Apollo Router"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

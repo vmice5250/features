@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kube-code-generator"
+  feature_name: "kube-code-generator (via asdf)"
+  feature_id: "kube-code-generator-asdf"
+  test_command: "kube-code-generator --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kube-code-generator"
+      display_name: "kube-code-generator"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

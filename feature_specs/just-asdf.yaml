@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Just"
+  feature_name: "Just (via asdf)"
+  feature_id: "just-asdf"
+  test_command: "just --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "just"
+      display_name: "Just"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

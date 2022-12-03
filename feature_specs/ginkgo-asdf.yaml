@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ginkgo"
+  feature_name: "ginkgo (via asdf)"
+  feature_id: "ginkgo-asdf"
+  test_command: "ginkgo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ginkgo"
+      display_name: "ginkgo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

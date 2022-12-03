@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs borg"
+  feature_name: "borg (via asdf)"
+  feature_id: "borg-asdf"
+  test_command: "borg --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "borg"
+      display_name: "borg"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

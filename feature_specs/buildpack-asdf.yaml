@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Buildpack"
+  feature_name: "Buildpack (via asdf)"
+  feature_id: "buildpack-asdf"
+  test_command: "buildpack --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "buildpack"
+      display_name: "Buildpack"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

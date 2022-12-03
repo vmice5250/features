@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs om"
+  feature_name: "om (via asdf)"
+  feature_id: "om-asdf"
+  test_command: "om --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "om"
+      display_name: "om"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

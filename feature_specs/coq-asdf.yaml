@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Coq"
+  feature_name: "Coq (via asdf)"
+  feature_id: "coq-asdf"
+  test_command: "coq --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "coq"
+      display_name: "Coq"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

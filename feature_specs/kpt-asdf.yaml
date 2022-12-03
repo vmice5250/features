@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kpt"
+  feature_name: "Kpt (via asdf)"
+  feature_id: "kpt-asdf"
+  test_command: "kpt --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kpt"
+      display_name: "Kpt"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

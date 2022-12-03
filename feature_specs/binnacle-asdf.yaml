@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs binnacle"
+  feature_name: "binnacle (via asdf)"
+  feature_id: "binnacle-asdf"
+  test_command: "binnacle --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "binnacle"
+      display_name: "binnacle"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

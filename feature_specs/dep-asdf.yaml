@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Dep"
+  feature_name: "Dep (via asdf)"
+  feature_id: "dep-asdf"
+  test_command: "dep --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dep"
+      display_name: "Dep"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

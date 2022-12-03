@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Desk"
+  feature_name: "Desk (via asdf)"
+  feature_id: "desk-asdf"
+  test_command: "desk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "desk"
+      display_name: "Desk"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

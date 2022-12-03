@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs editorconfig-checker"
+  feature_name: "editorconfig-checker (via asdf)"
+  feature_id: "editorconfig-checker-asdf"
+  test_command: "editorconfig-checker --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "editorconfig-checker"
+      display_name: "editorconfig-checker"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

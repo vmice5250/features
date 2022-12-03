@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs saml2aws"
+  feature_name: "saml2aws (via asdf)"
+  feature_id: "saml2aws-asdf"
+  test_command: "saml2aws --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "saml2aws"
+      display_name: "saml2aws"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs choose"
+  feature_name: "choose (via asdf)"
+  feature_id: "choose-asdf"
+  test_command: "choose --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "choose"
+      display_name: "choose"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

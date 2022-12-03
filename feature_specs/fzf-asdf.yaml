@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs fzf"
+  feature_name: "fzf (via asdf)"
+  feature_id: "fzf-asdf"
+  test_command: "fzf --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "fzf"
+      display_name: "fzf"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs datree"
+  feature_name: "datree (via asdf)"
+  feature_id: "datree-asdf"
+  test_command: "datree --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "datree"
+      display_name: "datree"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

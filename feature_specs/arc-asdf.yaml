@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs arc"
+  feature_name: "arc (via asdf)"
+  feature_id: "arc-asdf"
+  test_command: "arc --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "arc"
+      display_name: "arc"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

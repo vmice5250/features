@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs aws-amplify-cli"
+  feature_name: "aws-amplify-cli (via asdf)"
+  feature_id: "aws-amplify-cli-asdf"
+  test_command: "aws-amplify-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "aws-amplify-cli"
+      display_name: "aws-amplify-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

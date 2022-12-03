@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubeseal"
+  feature_name: "Kubeseal (via asdf)"
+  feature_id: "kubeseal-asdf"
+  test_command: "kubeseal --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubeseal"
+      display_name: "Kubeseal"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

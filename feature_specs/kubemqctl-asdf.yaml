@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Kubemqctl"
+  feature_name: "Kubemqctl (via asdf)"
+  feature_id: "kubemqctl-asdf"
+  test_command: "kubemqctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kubemqctl"
+      display_name: "Kubemqctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Redis"
+  feature_name: "Redis (via asdf)"
+  feature_id: "redis-asdf"
+  test_command: "redis --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "redis"
+      display_name: "Redis"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

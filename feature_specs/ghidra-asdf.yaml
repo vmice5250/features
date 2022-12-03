@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs ghidra"
+  feature_name: "ghidra (via asdf)"
+  feature_id: "ghidra-asdf"
+  test_command: "ghidra --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "ghidra"
+      display_name: "ghidra"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

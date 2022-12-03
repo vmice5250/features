@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs age"
+  feature_name: "age (via asdf)"
+  feature_id: "age-asdf"
+  test_command: "age --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "age"
+      display_name: "age"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dagger"
+  feature_name: "dagger (via asdf)"
+  feature_id: "dagger-asdf"
+  test_command: "dagger --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dagger"
+      display_name: "dagger"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

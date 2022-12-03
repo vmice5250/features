@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bun"
+  feature_name: "Bun (via asdf)"
+  feature_id: "bun-asdf"
+  test_command: "bun --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bun"
+      display_name: "Bun"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

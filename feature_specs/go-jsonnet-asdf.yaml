@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs go-jsonnet"
+  feature_name: "go-jsonnet (via asdf)"
+  feature_id: "go-jsonnet-asdf"
+  test_command: "go-jsonnet --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "go-jsonnet"
+      display_name: "go-jsonnet"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

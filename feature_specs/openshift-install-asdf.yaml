@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs openshift-install"
+  feature_name: "openshift-install (via asdf)"
+  feature_id: "openshift-install-asdf"
+  test_command: "openshift-install --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "openshift-install"
+      display_name: "openshift-install"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

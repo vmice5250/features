@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Helmsman"
+  feature_name: "Helmsman (via asdf)"
+  feature_id: "helmsman-asdf"
+  test_command: "helmsman --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "helmsman"
+      display_name: "Helmsman"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

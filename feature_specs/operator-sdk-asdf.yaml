@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Operator SDK"
+  feature_name: "Operator SDK (via asdf)"
+  feature_id: "operator-sdk-asdf"
+  test_command: "operator-sdk --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "operator-sdk"
+      display_name: "Operator SDK"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

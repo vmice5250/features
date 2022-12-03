@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Bitwarden"
+  feature_name: "Bitwarden (via asdf)"
+  feature_id: "bitwarden-asdf"
+  test_command: "bitwarden --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "bitwarden"
+      display_name: "Bitwarden"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

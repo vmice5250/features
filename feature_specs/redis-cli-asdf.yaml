@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Redis-cli"
+  feature_name: "Redis-cli (via asdf)"
+  feature_id: "redis-cli-asdf"
+  test_command: "redis-cli --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "redis-cli"
+      display_name: "Redis-cli"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

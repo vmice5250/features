@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs rust-analyzer"
+  feature_name: "rust-analyzer (via asdf)"
+  feature_id: "rust-analyzer-asdf"
+  test_command: "rust-analyzer --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "rust-analyzer"
+      display_name: "rust-analyzer"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

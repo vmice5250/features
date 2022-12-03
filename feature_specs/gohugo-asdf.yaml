@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs GoHugo"
+  feature_name: "GoHugo (via asdf)"
+  feature_id: "gohugo-asdf"
+  test_command: "gohugo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gohugo"
+      display_name: "GoHugo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

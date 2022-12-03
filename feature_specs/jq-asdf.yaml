@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs jq"
+  feature_name: "jq (via asdf)"
+  feature_id: "jq-asdf"
+  test_command: "jq --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "jq"
+      display_name: "jq"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

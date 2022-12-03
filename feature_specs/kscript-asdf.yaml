@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kscript"
+  feature_name: "kscript (via asdf)"
+  feature_id: "kscript-asdf"
+  test_command: "kscript --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kscript"
+      display_name: "kscript"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

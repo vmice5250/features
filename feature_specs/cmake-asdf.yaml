@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs cmake"
+  feature_name: "cmake (via asdf)"
+  feature_id: "cmake-asdf"
+  test_command: "cmake --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cmake"
+      display_name: "cmake"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

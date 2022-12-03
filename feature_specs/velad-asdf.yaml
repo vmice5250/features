@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs velad"
+  feature_name: "velad (via asdf)"
+  feature_id: "velad-asdf"
+  test_command: "velad --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "velad"
+      display_name: "velad"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

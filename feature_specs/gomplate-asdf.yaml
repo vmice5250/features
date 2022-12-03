@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs gomplate"
+  feature_name: "gomplate (via asdf)"
+  feature_id: "gomplate-asdf"
+  test_command: "gomplate --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "gomplate"
+      display_name: "gomplate"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

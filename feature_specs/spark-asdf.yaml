@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs spark"
+  feature_name: "spark (via asdf)"
+  feature_id: "spark-asdf"
+  test_command: "spark --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "spark"
+      display_name: "spark"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs CockroachDB"
+  feature_name: "CockroachDB (via asdf)"
+  feature_id: "cockroach-asdf"
+  test_command: "cockroach --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "cockroach"
+      display_name: "CockroachDB"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

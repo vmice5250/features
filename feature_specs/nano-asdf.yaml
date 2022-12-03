@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs GNU nano"
+  feature_name: "GNU nano (via asdf)"
+  feature_id: "nano-asdf"
+  test_command: "nano --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "nano"
+      display_name: "GNU nano"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs kube-controller-tools"
+  feature_name: "kube-controller-tools (via asdf)"
+  feature_id: "kube-controller-tools-asdf"
+  test_command: "kube-controller-tools --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "kube-controller-tools"
+      display_name: "kube-controller-tools"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

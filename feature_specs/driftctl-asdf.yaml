@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Driftctl"
+  feature_name: "Driftctl (via asdf)"
+  feature_id: "driftctl-asdf"
+  test_command: "driftctl --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "driftctl"
+      display_name: "Driftctl"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

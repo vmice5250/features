@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs pdm"
+  feature_name: "pdm (via asdf)"
+  feature_id: "pdm-asdf"
+  test_command: "pdm --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "pdm"
+      display_name: "pdm"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

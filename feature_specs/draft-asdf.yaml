@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs Draft"
+  feature_name: "Draft (via asdf)"
+  feature_id: "draft-asdf"
+  test_command: "draft --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "draft"
+      display_name: "Draft"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

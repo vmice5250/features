@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs dyff"
+  feature_name: "dyff (via asdf)"
+  feature_id: "dyff-asdf"
+  test_command: "dyff --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "dyff"
+      display_name: "dyff"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

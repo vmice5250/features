@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs chezmoi"
+  feature_name: "chezmoi (via asdf)"
+  feature_id: "chezmoi-asdf"
+  test_command: "chezmoi --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "chezmoi"
+      display_name: "chezmoi"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false

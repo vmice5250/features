@@ -1,0 +1,14 @@
+default_context:
+  description: "Installs richgo"
+  feature_name: "richgo (via asdf)"
+  feature_id: "richgo-asdf"
+  test_command: "richgo --version"
+  gitrepo: http://github.com/devcontainers-contrib/features
+  content:
+    asdf:
+    - package_name: "richgo"
+      display_name: "richgo"
+      version_alias: version
+      default: latest
+      exposed: true
+      optional: false
