@@ -2,7 +2,7 @@ default_context:
   description: "Installs tridentctl"
   feature_name: "tridentctl (via asdf)"
   feature_id: "tridentctl-asdf"
-  test_command: "tridentctl version"
+  test_command: "tridentctl --help"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

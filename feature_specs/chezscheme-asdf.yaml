@@ -19,3 +19,6 @@ default_context:
     - package_name: uuid-dev
       display_name: uuid-dev
       exposed: false
+    - package_name: libncurses5-dev
+      display_name: libncurses5-dev
+      exposed: false

@@ -16,3 +16,8 @@ default_context:
     - package_name: autoconf
       display_name: autoconf
       exposed: false
+    - package_name: automake
+      display_name: automake
+      exposed: false
+
+      

@@ -16,6 +16,7 @@ default_context:
     - package_name: build-essential
       display_name: build-essential
       exposed: false
-    - package_name: g++
-      display_name: g++
+    - package_name: cmake
+      display_name: cmake
       exposed: false
+    
