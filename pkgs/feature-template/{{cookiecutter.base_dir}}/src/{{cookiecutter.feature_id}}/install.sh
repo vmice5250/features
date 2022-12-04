@@ -73,8 +73,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 
-{% if ((cookiecutter.content.aptget is defined) and (cookiecutter.content.aptget |length > 0)) or ((cookiecutter.content.npm is defined) and (cookiecutter.content.npm |length > 0)) -%} 
-
+{% if ((cookiecutter.content.aptget is defined) and (cookiecutter.content.aptget |length > 0)) or ((cookiecutter.content.npm is defined) and (cookiecutter.content.npm |length > 0)) or ((cookiecutter.content.asdf is defined) and (cookiecutter.content.asdf |length > 0)) -%} 
 
 check_packages() {
     # This is part of devcontainers-contrib script library
@@ -221,18 +220,6 @@ updaterc() {
     if [ -f "/etc/zsh/zshrc" ] && [[ "$(cat /etc/zsh/zshrc)" != *"$1"* ]]; then
         echo -e "$1" >> /etc/zsh/zshrc
     fi
-}
-
-check_packages() {
-    # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
-  if ! dpkg -s "$@" > /dev/null 2>&1; then
-    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-      echo "Running apt-get update..."
-      apt-get update -y
-    fi
-    apt-get -y install --no-install-recommends "$@"
-  fi
 }
 
 install_via_asdf() {

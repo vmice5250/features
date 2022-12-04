@@ -19,5 +19,14 @@ default_context:
     - package_name: automake
       display_name: automake
       exposed: false
+    - package_name: lib32readline8
+      display_name: lib32readline8
+      exposed: false
+    - package_name: lib32readline-dev
+      display_name: lib32readline-dev
+      exposed: false
+    - package_name: build-essential
+      display_name: build-essential
+      exposed: false
 
       

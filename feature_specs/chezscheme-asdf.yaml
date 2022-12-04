@@ -22,3 +22,6 @@ default_context:
     - package_name: libncurses5-dev
       display_name: libncurses5-dev
       exposed: false
+    - package_name: libx11-dev
+      display_name: libx11-dev
+      exposed: false
