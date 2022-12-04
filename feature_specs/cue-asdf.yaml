@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs CUE"
+  description: "CUE is an open source data constraint language which aims to simplify tasks involving defining and using data."
   feature_name: "CUE (via asdf)"
   feature_id: "cue-asdf"
-  test_command: "cue --version"
+  test_command: "cue version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

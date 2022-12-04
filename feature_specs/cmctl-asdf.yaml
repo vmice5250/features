@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs cmctl"
+  description: "cmctl is a command line tool that can help you manage cert-manager and its resources inside your cluster."
   feature_name: "cmctl (via asdf)"
   feature_id: "cmctl-asdf"
-  test_command: "cmctl --version"
+  test_command: "cmctl version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs mlton"
+  description: "MLton is a whole-program optimizing compiler for the Standard ML programming language."
   feature_name: "mlton (via asdf)"
   feature_id: "mlton-asdf"
-  test_command: "mlton --version"
+  test_command: "type mlton"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

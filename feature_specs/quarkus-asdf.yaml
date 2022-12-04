@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs Quarkus CLI"
+  description: "The quarkus command lets you create projects, manage extensions and do essential build and dev commands using the underlying project build tool."
   feature_name: "Quarkus CLI (via asdf)"
   feature_id: "quarkus-asdf"
-  test_command: "quarkus --version"
+  test_command: "quarkus version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

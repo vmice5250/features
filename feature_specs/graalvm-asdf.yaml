@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs GraalVM"
+  description: "GraalVM is a high-performance JDK designed to accelerate Java application performance while consuming fewer resources."
   feature_name: "GraalVM (via asdf)"
   feature_id: "graalvm-asdf"
-  test_command: "graalvm --version"
+  test_command: "gu --help"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

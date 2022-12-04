@@ -2,7 +2,7 @@ default_context:
   description: "Installs boundary"
   feature_name: "boundary (via asdf)"
   feature_id: "boundary-asdf"
-  test_command: "boundary --version"
+  test_command: "boundary version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

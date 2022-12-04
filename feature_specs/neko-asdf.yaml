@@ -2,7 +2,7 @@ default_context:
   description: "Installs Neko Virtual Machine"
   feature_name: "Neko Virtual Machine (via asdf)"
   feature_id: "neko-asdf"
-  test_command: "neko --version"
+  test_command: "neko -version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

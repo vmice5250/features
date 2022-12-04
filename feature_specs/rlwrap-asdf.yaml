@@ -12,3 +12,7 @@ default_context:
       default: latest
       exposed: true
       optional: false
+    aptget: 
+    - package_name: autoconf
+      display_name: autoconf
+      exposed: false

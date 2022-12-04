@@ -1,8 +1,8 @@
 default_context:
-  description: "Installs Kotlin"
+  description: "Kotlin is a modern but already mature programming language aimed to make developers happier."
   feature_name: "Kotlin (via asdf)"
   feature_id: "kotlin-asdf"
-  test_command: "kotlin --version"
+  test_command: "kotlin -version"
   gitrepo: http://github.com/devcontainers-contrib/features
   content:
     asdf:

@@ -12,3 +12,10 @@ default_context:
       default: latest
       exposed: true
       optional: false
+    aptget: 
+    - package_name: build-essential
+      display_name: build-essential
+      exposed: false
+    - package_name: g++
+      display_name: g++
+      exposed: false
