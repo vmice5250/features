@@ -6,10 +6,10 @@
 
 set -e
 {%- if cookiecutter.content.aptget is defined and cookiecutter.content.aptget |length > 0  -%} 
-
-{% if optional_aptget_packages |length > 0  %} 
 {%- set optional_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'True') | list) -%}
 {%- set mandatory_aptget_packages = (cookiecutter.content.aptget | selectattr('exposed', 'equalto', 'False') | list) -%}
+
+{%- if optional_aptget_packages is defined and optional_aptget_packages|length > 0 -%}
 # optional aptget packages  
 {% for aptget_package in optional_aptget_packages -%} 
 {{ aptget_package.display_name  | to_screaming_snake_case}}=${% raw %}{{% endraw %}{%- if aptget_package.version_alias is defined -%}{{aptget_package.version_alias | to_env_case}}{% else %}{{ aptget_package.display_name | to_env_case}}{%- endif -%}:-"{{ aptget_package.default }}"{% raw %}}{% endraw %}
@@ -73,28 +73,42 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 
-{% if cookiecutter.content.aptget is defined and cookiecutter.content.aptget |length > 0  -%} 
-# Checks if packages are installed and installs them if not
+{% if ((cookiecutter.content.aptget is defined) and (cookiecutter.content.aptget |length > 0)) or ((cookiecutter.content.npm is defined) and (cookiecutter.content.npm |length > 0)) -%} 
+
+
 check_packages() {
-    if ! dpkg -s "$@" > /dev/null 2>&1; then
-        if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-            echo "Running apt-get update..."
-            apt-get update -y
-        fi
-        apt-get -y install --no-install-recommends "$@"
+    # This is part of devcontainers-contrib script library
+    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
+  if ! dpkg -s "$@" > /dev/null 2>&1; then
+    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
+      echo "Running apt-get update..."
+      apt-get update -y
     fi
+    apt-get -y install --no-install-recommends "$@"
+  fi
 }
+{%- endif -%}
+
+
+
+
+{% if cookiecutter.content.aptget is defined and cookiecutter.content.aptget |length > 0  -%} 
 {%- if mandatory_aptget_packages is defined and mandatory_aptget_packages|length > 0 -%}
 aptget_packages=({% for aptget_package_name in mandatory_aptget_packages -%}{{aptget_package_name.package_name}} {% endfor %})
-{%- else -%}
+{% else %}
 aptget_packages=()
 {%- endif -%}
+
+{%- if optional_aptget_packages is defined and optional_aptget_packages|length > 0 -%}
 
 {%- for aptget_package in optional_aptget_packages -%} 
 if [ "${{ aptget_package.display_name  | to_screaming_snake_case }}" != "none" ]; 
     aptget_packages+=("{{aptget_package.package_name}}")
 fi
+
 {% endfor %}
+{%- endif -%}
+
 check_packages "${aptget_packages[@]}"
 {% endif %}
 
@@ -163,18 +177,6 @@ install_via_pipx "${pipx_installations[@]}"
 {%- endif %}
 
 {% if cookiecutter.content.npm is defined and cookiecutter.content.npm |length > 0  %} 
-
-check_packages() {
-    # This is part of devcontainers-contrib script library
-    # source: https://github.com/devcontainers-contrib/features/tree/v1.1.8/script-library
-  if ! dpkg -s "$@" > /dev/null 2>&1; then
-    if [ "$(find /var/lib/apt/lists/* | wc -l)" = "0" ]; then
-      echo "Running apt-get update..."
-      apt-get update -y
-    fi
-    apt-get -y install --no-install-recommends "$@"
-  fi
-}
 
 install_via_npm() {
     # This is part of devcontainers-contrib script library
