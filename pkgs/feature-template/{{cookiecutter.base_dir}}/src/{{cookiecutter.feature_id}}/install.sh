@@ -87,7 +87,7 @@ check_packages() {
     apt-get -y install --no-install-recommends "$@"
   fi
 }
-{%- endif -%}
+{% endif %}
 
 
 
