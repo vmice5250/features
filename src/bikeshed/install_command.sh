@@ -4,7 +4,4 @@
 
 set -e
 
-source ./dependencies.sh
-
-source ./install_command.sh
-
+echo 'Done!'
