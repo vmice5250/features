@@ -10,6 +10,29 @@ ensure_curl () {
     fi 
 }
 
+
+
+ensure_featmake () {
+    if ! type featmake > /dev/null 2>&1; then
+        temp_dir=/tmp/featmake-download
+        mkdir -p $temp_dir
+
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+
+        (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
+
+        chmod a+x $temp_dir/featmake
+        mv -f $temp_dir/featmake /usr/local/bin/featmake
+
+        rm -rf $temp_dir
+    fi
+}
+
 ensure_curl
 
-PACKAGE="hatch" source <(curl -s "https://raw.githubusercontent.com/devcontainers-contrib/cli/main/resources/install-feature.sh") "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+ensure_featmake
+
+# installing ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1
+PACKAGE="hatch" featmake "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+

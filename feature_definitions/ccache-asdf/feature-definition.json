@@ -15,18 +15,24 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0": {
-            "plugin": "ccache",
-            "version": "$options.version"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
+            "options": {
+                "packages": "build-essential cmake"
+            }
         },
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0": {
-            "packages": "build-essential cmake"
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "ccache",
+                "version": "$options.version"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "ccache --version"
 }

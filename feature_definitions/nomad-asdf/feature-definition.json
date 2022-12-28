@@ -17,12 +17,15 @@
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0": {
-            "plugin": "nomad",
-            "version": "$options.version"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "nomad",
+                "version": "$options.version"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "nomad --version"
 }

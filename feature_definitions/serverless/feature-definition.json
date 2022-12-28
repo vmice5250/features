@@ -17,12 +17,15 @@
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1": {
-            "package": "serverless",
-            "version": "$options.version"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/npm-package:1.0.1",
+            "options": {
+                "package": "serverless",
+                "version": "$options.version"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "serverless --version"
 }

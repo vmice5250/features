@@ -17,11 +17,14 @@
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1": {
-            "package": "jrnl"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "jrnl"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "jrnl --version"
 }

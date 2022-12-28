@@ -10,8 +10,33 @@ ensure_curl () {
     fi 
 }
 
+
+
+ensure_featmake () {
+    if ! type featmake > /dev/null 2>&1; then
+        temp_dir=/tmp/featmake-download
+        mkdir -p $temp_dir
+
+        curl -sSL -o $temp_dir/featmake https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/featmake 
+        curl -sSL -o $temp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.0.9/checksums.txt
+
+        (cd $temp_dir ; sha256sum --check --strict $temp_dir/checksums.txt)
+
+        chmod a+x $temp_dir/featmake
+        mv -f $temp_dir/featmake /usr/local/bin/featmake
+
+        rm -rf $temp_dir
+    fi
+}
+
 ensure_curl
 
-PLUGIN="erlang" VERSION="$VERSION" source <(curl -s "https://raw.githubusercontent.com/devcontainers-contrib/cli/main/resources/install-feature.sh") "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+ensure_featmake
 
-PACKAGES="build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libwxgtk-webview3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk" source <(curl -s "https://raw.githubusercontent.com/devcontainers-contrib/cli/main/resources/install-feature.sh") "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+# installing ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0
+PACKAGES="build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libwxgtk-webview3.0-gtk3-dev libgl1-mesa-dev libglu1-mesa-dev libpng-dev libssh-dev unixodbc-dev xsltproc fop libxml2-utils libncurses-dev openjdk-11-jdk" featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
+
+
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
+PLUGIN="erlang" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+

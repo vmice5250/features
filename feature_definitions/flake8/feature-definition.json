@@ -26,12 +26,15 @@
     "installsAfter": [
         "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1": {
-            "package": "flake8",
-            "injections": "$options.plugins"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "flake8",
+                "injections": "$options.plugins"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "flake8 --version"
 }

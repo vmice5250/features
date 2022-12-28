@@ -15,17 +15,23 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1"
+        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0": {
-            "packages": "libsasl2-dev g++"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
+            "options": {
+                "packages": "libsasl2-dev g++"
+            }
         },
-        "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1": {
-            "package": "localstack[full]"
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/pipx-package:1.0.1",
+            "options": {
+                "package": "localstack[full]"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "localstack --version"
 }

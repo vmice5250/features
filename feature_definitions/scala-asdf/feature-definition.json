@@ -15,18 +15,24 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0"
     ],
-    "dependencies": {
-        "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0": {
-            "plugin": "scala",
-            "version": "$options.version"
+    "dependencies": [
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0",
+            "options": {
+                "packages": "openjdk-11-jdk"
+            }
         },
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0": {
-            "packages": "openjdk-11-jdk"
+        {
+            "feature": "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0",
+            "options": {
+                "plugin": "scala",
+                "version": "$options.version"
+            }
         }
-    },
+    ],
     "install_command": "echo 'Done!'",
     "test_command": "scala --version"
 }
