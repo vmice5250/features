@@ -26,6 +26,6 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "bandit --version"
+    "test_command": "bikeshed --version"
 }
 

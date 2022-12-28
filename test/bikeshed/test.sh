@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "bandit --version" bandit --version
+check "bikeshed --version" bikeshed --version
 
 reportResults
