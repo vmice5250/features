@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of sentinel (via asdf) to install.",
+            "description": "Select the version of sentinel to install.",
             "proposals": [
                 "latest"
             ],

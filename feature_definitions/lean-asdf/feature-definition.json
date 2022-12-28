@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Lean (via asdf) to install.",
+            "description": "Select the version of Lean to install.",
             "proposals": [
                 "latest"
             ],

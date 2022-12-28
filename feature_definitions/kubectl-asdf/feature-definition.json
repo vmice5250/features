@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Kubectl (via asdf) to install.",
+            "description": "Select the version of Kubectl to install.",
             "proposals": [
                 "latest"
             ],

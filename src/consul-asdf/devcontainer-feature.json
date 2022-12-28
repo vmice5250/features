@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of consul (via asdf) to install.",
+            "description": "Select the version of consul to install.",
             "proposals": [
                 "latest"
             ],

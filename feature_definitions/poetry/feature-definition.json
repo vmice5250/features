@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Poetry (via pipx) to install.",
+            "description": "Select the version of Poetry to install.",
             "proposals": [
                 "latest"
             ],

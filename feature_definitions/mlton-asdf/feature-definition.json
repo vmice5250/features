@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of mlton (via asdf) to install.",
+            "description": "Select the version of mlton to install.",
             "proposals": [
                 "latest"
             ],

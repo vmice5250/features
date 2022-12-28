@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Elasticsearch (via asdf) to install.",
+            "description": "Select the version of Elasticsearch to install.",
             "proposals": [
                 "latest"
             ],

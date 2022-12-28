@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Terraform Language Server (terraform-ls) (via asdf) to install.",
+            "description": "Select the version of Terraform Language Server (terraform-ls) to install.",
             "proposals": [
                 "latest"
             ],

@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Black (via pipx) to install.",
+            "description": "Select the version of Black to install.",
             "proposals": [
                 "latest"
             ],

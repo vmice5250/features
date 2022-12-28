@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Neko Virtual Machine (via asdf) to install.",
+            "description": "Select the version of Neko Virtual Machine to install.",
             "proposals": [
                 "latest"
             ],

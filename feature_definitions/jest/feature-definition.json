@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Jest (via npm) to install.",
+            "description": "Select the version of Jest to install.",
             "proposals": [
                 "latest"
             ],

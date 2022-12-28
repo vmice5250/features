@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Serverless Framework (via npm) to install.",
+            "description": "Select the version of Serverless Framework to install.",
             "proposals": [
                 "latest"
             ],

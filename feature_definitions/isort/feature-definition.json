@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of isort (via pipx) to install.",
+            "description": "Select the version of isort to install.",
             "proposals": [
                 "latest"
             ],

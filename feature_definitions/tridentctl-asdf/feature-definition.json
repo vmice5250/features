@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of tridentctl (via asdf) to install.",
+            "description": "Select the version of tridentctl to install.",
             "proposals": [
                 "latest"
             ],

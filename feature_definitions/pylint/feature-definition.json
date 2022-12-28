@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Pylint (via pipx) to install.",
+            "description": "Select the version of Pylint to install.",
             "proposals": [
                 "latest"
             ],

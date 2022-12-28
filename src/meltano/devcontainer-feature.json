@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Meltano ELT (via pipx) to install.",
+            "description": "Select the version of Meltano ELT to install.",
             "proposals": [
                 "latest"
             ],

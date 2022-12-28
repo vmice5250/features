@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Ionic CLI (via npm) to install.",
+            "description": "Select the version of Ionic CLI to install.",
             "proposals": [
                 "latest"
             ],

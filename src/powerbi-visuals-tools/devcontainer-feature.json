@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of PowerBI Visual Tools (pbiviz) (via npm) to install.",
+            "description": "Select the version of PowerBI Visual Tools (pbiviz) to install.",
             "proposals": [
                 "latest"
             ],

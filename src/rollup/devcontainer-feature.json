@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of rollup.js (via npm) to install.",
+            "description": "Select the version of rollup.js to install.",
             "proposals": [
                 "latest"
             ],

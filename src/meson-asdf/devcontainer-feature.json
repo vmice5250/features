@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Meson (via asdf) to install.",
+            "description": "Select the version of Meson to install.",
             "proposals": [
                 "latest"
             ],

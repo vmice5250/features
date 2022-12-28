@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Dasel (via asdf) to install.",
+            "description": "Select the version of Dasel to install.",
             "proposals": [
                 "latest"
             ],

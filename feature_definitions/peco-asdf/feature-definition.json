@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of peco (via asdf) to install.",
+            "description": "Select the version of peco to install.",
             "proposals": [
                 "latest"
             ],

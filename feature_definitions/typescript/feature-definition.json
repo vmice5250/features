@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of TypeScript (via npm) to install.",
+            "description": "Select the version of TypeScript to install.",
             "proposals": [
                 "latest"
             ],

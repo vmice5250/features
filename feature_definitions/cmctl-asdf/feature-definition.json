@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of cmctl (via asdf) to install.",
+            "description": "Select the version of cmctl to install.",
             "proposals": [
                 "latest"
             ],

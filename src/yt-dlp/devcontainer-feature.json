@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of yt-dlp (via pipx) to install.",
+            "description": "Select the version of yt-dlp to install.",
             "proposals": [
                 "latest"
             ],

@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of tox (via pipx) to install.",
+            "description": "Select the version of tox to install.",
             "proposals": [
                 "latest"
             ],

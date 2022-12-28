@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Angular CLI (via npm) to install.",
+            "description": "Select the version of Angular CLI to install.",
             "proposals": [
                 "latest"
             ],

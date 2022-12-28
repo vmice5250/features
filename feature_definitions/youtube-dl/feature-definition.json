@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of youtube-dl (via pipx) to install.",
+            "description": "Select the version of youtube-dl to install.",
             "proposals": [
                 "latest"
             ],

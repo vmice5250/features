@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of tfc-agent (via asdf) to install.",
+            "description": "Select the version of tfc-agent to install.",
             "proposals": [
                 "latest"
             ],

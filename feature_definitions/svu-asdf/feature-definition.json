@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of svu (via asdf) to install.",
+            "description": "Select the version of svu to install.",
             "proposals": [
                 "latest"
             ],

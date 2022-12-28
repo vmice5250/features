@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of chezscheme (via asdf) to install.",
+            "description": "Select the version of chezscheme to install.",
             "proposals": [
                 "latest"
             ],

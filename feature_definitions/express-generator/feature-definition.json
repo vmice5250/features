@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Express Application Generator (via npm) to install.",
+            "description": "Select the version of Express Application Generator to install.",
             "proposals": [
                 "latest"
             ],

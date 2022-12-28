@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Ccache (via asdf) to install.",
+            "description": "Select the version of Ccache to install.",
             "proposals": [
                 "latest"
             ],

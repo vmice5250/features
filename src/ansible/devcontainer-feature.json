@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Ansible (via pipx) to install.",
+            "description": "Select the version of Ansible to install.",
             "proposals": [
                 "latest"
             ],

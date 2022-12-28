@@ -2,7 +2,7 @@
 
 COMMAND="${COMMAND:-""}"
 
-set -e
+set -ex
 
 # Clean up
 rm -rf /var/lib/apt/lists/*

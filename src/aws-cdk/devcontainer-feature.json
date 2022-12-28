@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of AWS Cloud Development Kit (AWS CDK) (via npm) to install.",
+            "description": "Select the version of AWS Cloud Development Kit (AWS CDK) to install.",
             "proposals": [
                 "latest"
             ],

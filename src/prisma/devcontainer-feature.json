@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Prisma CLI (via npm) to install.",
+            "description": "Select the version of Prisma CLI to install.",
             "proposals": [
                 "latest"
             ],

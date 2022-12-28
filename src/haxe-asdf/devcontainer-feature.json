@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of Haxe (via asdf) to install.",
+            "description": "Select the version of Haxe to install.",
             "proposals": [
                 "latest"
             ],

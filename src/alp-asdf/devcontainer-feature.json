@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of alp (via asdf) to install.",
+            "description": "Select the version of alp to install.",
             "proposals": [
                 "latest"
             ],

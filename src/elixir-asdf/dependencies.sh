@@ -38,5 +38,9 @@ PACKAGES="build-essential autoconf m4 libncurses5-dev libwxgtk3.0-gtk3-dev libwx
 
 
 # installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
-PLUGIN="elixir" VERSION="$VERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+PLUGIN="elixir" VERSION="$ELIXIRVERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
+
+
+# installing ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0
+PLUGIN="erlang" VERSION="$ERLANGVERSION" featmake "ghcr.io/devcontainers-contrib/features/asdf-package:1.0.0"
 

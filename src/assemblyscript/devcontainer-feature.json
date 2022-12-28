@@ -7,7 +7,7 @@
     "options": {
         "version": {
             "default": "latest",
-            "description": "Select the version of AssemblyScript (via npm) to install.",
+            "description": "Select the version of AssemblyScript to install.",
             "proposals": [
                 "latest"
             ],
