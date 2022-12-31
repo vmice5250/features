@@ -58,5 +58,5 @@
         }
     ],
     "install_command": "echo 'Done!'",
-    "test_command": "grdle-profiler --version"
+    "test_command": "gradle-profiler --version"
 }

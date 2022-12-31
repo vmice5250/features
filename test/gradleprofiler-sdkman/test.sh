@@ -6,6 +6,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "grdle-profiler --version" grdle-profiler --version
+check "gradle-profiler --version" grdle-profiler --version
 
 reportResults
