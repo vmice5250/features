@@ -13,6 +13,14 @@
             ],
             "type": "string"
         },
+        "kotlinVersion": {
+            "default": "latest",
+            "description": "Select or enter a kotlin version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
         "jdkVersion": {
             "default": "latest",
             "description": "Select or enter a JDK version to install.",

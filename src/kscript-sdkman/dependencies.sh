@@ -38,5 +38,9 @@ JDKDISTRO="$JDKDISTRO" VERSION="$JDKVERSION" featmake "ghcr.io/devcontainers/fea
 
 
 # installing ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0
+CANDIDATE="kotlin" VERSION="$KOTLINVERSION" featmake "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0"
+
+
+# installing ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0
 CANDIDATE="kscript" VERSION="$VERSION" featmake "ghcr.io/ebaskoro/devcontainer-features/sdkman:1.0.0"
 
