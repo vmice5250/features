@@ -22,6 +22,15 @@
             ],
             "default": "latest",
             "description": "Select the version of the asdf plugin to install."
+        },
+        "pluginRepo": {
+            "type": "string",
+            "proposals": [
+                "https://github.com/grimoh/asdf-act.git",
+                "https://github.com/asdf-community/asdf-hashicorp.git"
+            ],
+            "default": "",
+            "description": "Select the asdf plugin repo to install (can remain empty in order to use the plugin short-name index https://github.com/asdf-vm/asdf-plugins)"
         }
     }
 }
