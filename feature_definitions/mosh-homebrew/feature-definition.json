@@ -19,7 +19,7 @@
     ],
     "dependencies": [
         {
-            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.0",
+            "feature": "ghcr.io/devcontainers-contrib/features/homebrew-package:1.0.1",
             "options": {
                 "package": "mosh",
                 "version": "$options.version"
