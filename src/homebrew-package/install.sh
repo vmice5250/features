@@ -82,8 +82,10 @@ install_via_homebrew() {
 		# "--overwrite" in order to not fail when a similarly named binary is already linked
 		brew install $installation_flags --overwrite "$package_full"  
 		
-		# removing tapbin order to save disk space
+		# attempt to remove tap in order to save disk space
+		set +e
 		brew untap homebrew/cask --force
+		set -e
 	fi
 
     brew link --overwrite --force "$package_full" 
