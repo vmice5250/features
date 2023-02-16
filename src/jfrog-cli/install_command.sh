@@ -4,4 +4,4 @@
 
 set -e
 
-curl -fL https://install-cli.jfrog.io | sh && chown $_REMOTE_USER /usr/local/bin/jf
+curl -fL https://install-cli.jfrog.io | sh && chown $_REMOTE_USER /usr/local/bin/jf && chmod a+x /usr/local/bin/jf
