@@ -36,5 +36,5 @@ ensure_featmake
 PS1='\s-\v\$' source /etc/profile
 
 # installing ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0
-featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAGES "curl" 
+featmake "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.0" -PACKAGES "curl ca-certificates" 
 
