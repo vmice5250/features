@@ -42,8 +42,8 @@ ensure_dcontainer() {
 
         trap clean_up EXIT
 
-        curl -sSL -o $tmp_dir/dcontainer https://github.com/devcontainers-contrib/cli/releases/download/v0.2.0/dcontainer 
-        curl -sSL -o $tmp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.2.0/checksums.txt
+        curl -sSL -o $tmp_dir/dcontainer https://github.com/devcontainers-contrib/cli/releases/download/v0.2.1/dcontainer 
+        curl -sSL -o $tmp_dir/checksums.txt https://github.com/devcontainers-contrib/cli/releases/download/v0.2.1/checksums.txt
         (cd $tmp_dir ; sha256sum --check --strict --ignore-missing $tmp_dir/checksums.txt)
         chmod a+x $tmp_dir/dcontainer
         dcontainer_location=$tmp_dir/dcontainer
