@@ -62,17 +62,14 @@ install_via_homebrew() {
 
 		# Solves CVE-2022-24767 mitigation in Git >2.35.2 
 		# For more information: https://github.blog/2022-04-12-git-security-vulnerability-announced/
-		git config --global --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"
-
-
-		brew install $installation_flags --overwrite "$package_full" 
-
+		git config --global --add safe.directory "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core"		
 
 		if brew desc --eval-all --formulae "$package_full"; then
 			# If a version is exists then install it the regular way
 			brew install $installation_flags --overwrite "$package_full" 
 		else
 			# unshallow and extract as last resort
+			echo "Unshallowing homebrew-core. This could take a while."
 			git -C "$(brew --prefix)/Homebrew/Library/Taps/homebrew/homebrew-core" fetch --unshallow
 			brew extract --force --version="$version" "$package" homebrew/cask
 			
