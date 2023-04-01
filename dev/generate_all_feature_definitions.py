@@ -1,5 +1,5 @@
 import os
-from dcontainer.cli.generate.generate_feature import generate
+from dcontainer.devcontainer.feature_generation.oci_feature_generator import OCIFeatureGenerator
 from pathlib import Path
 
 import typer
@@ -20,14 +20,14 @@ def generate_all_Feature_definitions(
                     )
                     )
 
-        generate(
+        OCIFeatureGenerator.generate(
             Path(
                 os.path.join(
                     feature_definitions_dir, feature_name, "feature-definition.json"
                 )
             ),
             output_dir=Path(output_dir),
-            release_version="v0.2.3"
+            nanolayer_version="v0.4.0"
         )
 
 
