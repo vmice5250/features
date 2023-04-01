@@ -13,7 +13,8 @@
             "feature": "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.2",
             "options": {
                 "packages": "neovim",
-                "ppas": "ppa:neovim-ppa/stable"
+                "ppas": "ppa:neovim-ppa/stable",
+                "force_ppas_on_non_ubuntu": true
             }
         }
     ],
