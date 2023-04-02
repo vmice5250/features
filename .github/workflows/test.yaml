@@ -73,6 +73,7 @@ jobs:
           fi
   
   test:
+    if: ${{ fromJson(needs.prepare-matrix.outputs.features_to_test)[0] != null }}
     needs: [find-features, prepare-matrix]
     runs-on: ubuntu-latest
     continue-on-error: true
