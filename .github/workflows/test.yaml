@@ -108,9 +108,3 @@ jobs:
 
       - name: "Testing global scenarios"
         run: devcontainer features test --global-scenarios-only .
-
-  artificial-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: do something
-        run: "echo hi"
