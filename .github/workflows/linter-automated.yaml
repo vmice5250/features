@@ -1,4 +1,4 @@
-name: "CI - Shell Script Linter"
+name: "Features - ShellCechk"
 on: 
   push:
     branches:
