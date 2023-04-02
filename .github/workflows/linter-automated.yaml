@@ -1,4 +1,4 @@
-name: "Features - ShellCechk"
+name: "Features - ShellCheck"
 on: 
   push:
     branches:

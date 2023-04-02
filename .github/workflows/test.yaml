@@ -4,14 +4,14 @@ on:
     inputs:
       on_changes_only:
         type: boolean
-        description: 'run tests on canges from main branch only'
+        description: 'run tests on changes from main branch only'
         default: false
 
   workflow_call:
     inputs:
       on_changes_only:
         type: boolean
-        description: 'run tests on canges from main branch only'
+        description: 'run tests on changes from main branch only'
         default: false
 
 
@@ -78,7 +78,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ${{ fromJson(needs.prepare-matrix.outputs.features_to_test )}}
+        features: ${{ needs.prepare-matrix.outputs.features_to_test }}
     steps:
       - uses: actions/checkout@v3
 
@@ -99,3 +99,9 @@ jobs:
 
       - name: "Testing global scenarios"
         run: devcontainer features test --global-scenarios-only .
+
+  artificial-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: do something
+        run: "echo hi"
