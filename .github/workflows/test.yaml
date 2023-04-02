@@ -51,24 +51,24 @@ jobs:
         id: resolve_features
         run: |
           if [ ${{ github.event_name	}} == 'pull_request' ]; then
-            echo "features_to_test=${{ needs.find-features.outputs.changed-features }}" >> $GITHUB_OUTPUT
+            echo "features_to_test='${{ needs.find-features.outputs.changed-features }}'" >> $GITHUB_OUTPUT
 
           elif [ ${{ github.event_name	}} == 'push' ]; then
-            echo "features_to_test=${{ needs.find-features.outputs.changed-features }}" >> $GITHUB_OUTPUT
+            echo "features_to_test='${{ needs.find-features.outputs.changed-features }}'" >> $GITHUB_OUTPUT
           
           elif [ ${{ github.event_name	}} == 'workflow_dispatch' ]; then
 
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
-              echo "features_to_test=${{ needs.find-features.outputs.changed-features }}" >> $GITHUB_OUTPUT
+              echo "features_to_test='${{ needs.find-features.outputs.changed-features }}'" >> $GITHUB_OUTPUT
             else
-              echo "features_to_test=${{ needs.find-features.outputs.all-features }}" >> $GITHUB_OUTPUT
+              echo "features_to_test='${{ needs.find-features.outputs.all-features }}'" >> $GITHUB_OUTPUT
             fi
           
           elif [ ${{ github.event_name	}} == 'workflow_call' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
-              echo "features_to_test=${{ needs.find-features.outputs.changed-features }}" >> $GITHUB_OUTPUT
+              echo "features_to_test='${{ needs.find-features.outputs.changed-features }}'" >> $GITHUB_OUTPUT
             else
-              echo "features_to_test=${{ needs.find-features.outputs.all-features }}" >> $GITHUB_OUTPUT
+              echo "features_to_test='${{ needs.find-features.outputs.all-features }}'" >> $GITHUB_OUTPUT
             fi          
           fi
   
@@ -78,7 +78,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        features: ${{ needs.prepare-matrix.outputs.features_to_test }}
+        features: ${{ fromJson(needs.prepare-matrix.outputs.features_to_test) }}
     steps:
       - uses: actions/checkout@v3
 
