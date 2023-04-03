@@ -45,7 +45,6 @@ runs:
       shell: bash
       run: |
         echo '${{ steps.filter.outputs.changes }}'
-        ls -lh
         # prepare all features
         all_features=$(sudo tree -J -d  ./src | sudo jq -c '.[0].contents | map(.name)')
 
@@ -59,10 +58,6 @@ runs:
         changed_features=$(cat changed_features.json)
 
         # binning
-        echo hi!!!
-        ls -lh
-        echo "all_features=$all_features" >> $GITHUB_OUTPUT
-        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
 
         cat > bin_cycle.py << EOF
         import sys
@@ -84,10 +79,10 @@ runs:
 
         sys.stdout.write(json.dumps(binned))
         EOF
-        ls -lh
 
+        binned_all_features=$(echo $all_features | python3 bin_cycle.py)
+        binned_changed_features=$(echo $changed_features | python3 bin_cycle.py)
+        echo "all_features=$all_features" >> $GITHUB_OUTPUT
+        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
 
-        # binned_all_features=$(echo $all_features | python3 bin_cycle.py)
-        # binned_changed_features=$(echo $changed_features | python3 bin_cycle.py)
-      
 
