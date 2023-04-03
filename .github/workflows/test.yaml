@@ -35,7 +35,7 @@ jobs:
         uses: ./.github/actions/list-changed-features-action
         with:
           path: .
-          max_bins: 256
+          max_bins: 100
 
   prepare-matrix:
     needs: [find-features]
