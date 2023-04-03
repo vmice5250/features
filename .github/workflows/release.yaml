@@ -1,4 +1,4 @@
-name: "Release dev container features & Generate Documentation"
+name: "Features - Release"
 on:
   workflow_dispatch:
     inputs:
