@@ -89,6 +89,7 @@ jobs:
           EOF
 
           binned_features=$(echo '${{ steps.resolve_features.outputs.features_to_test }}' | python3 bin_cycle.py)
+          echo $binned_features
           echo "binned_features=$binned_features" >> $GITHUB_OUTPUT
 
 
