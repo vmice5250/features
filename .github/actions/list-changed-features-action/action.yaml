@@ -73,7 +73,7 @@ runs:
                 basket.append(item)
             return baskets
 
-        std_input = list(fileinput.input())
+        std_input = "".join(fileinput.input())
 
         binned = cycle_baskets(json.loads(std_input), 10)
 
