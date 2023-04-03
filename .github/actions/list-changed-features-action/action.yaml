@@ -59,6 +59,10 @@ runs:
         changed_features=$(cat changed_features.json)
 
         # binning
+        echo hi!!!
+        
+        echo "all_features=$all_features" >> $GITHUB_OUTPUT
+        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
 
 #         cat > bin_cycle.py << EOF
 # import sys
@@ -84,7 +88,5 @@ runs:
 
         # binned_all_features=$(echo $all_features | python3 bin_cycle.py)
         # binned_changed_features=$(echo $changed_features | python3 bin_cycle.py)
-        echo hi!!!
-        echo "all_features=$all_features" >> $GITHUB_OUTPUT
-        echo "changed_features=$changed_features" >> $GITHUB_OUTPUT
+      
 
