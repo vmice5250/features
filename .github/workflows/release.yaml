@@ -9,7 +9,7 @@ on:
 
 jobs:
   run-tests:
-    uses: ./.github/workflows/tests.yaml
+    uses: ./.github/workflows/test.yaml
     secrets: inherit
     with:
       enabled: ${{ inputs.run_tests }}

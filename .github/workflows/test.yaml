@@ -27,19 +27,15 @@ jobs:
     runs-on: ubuntu-latest
     name: Find features
     outputs:
-      all-features: ${{ steps.features.outputs.folders }}
-      changed-features: ${{ steps.changed-features.outputs.changed_features }}
+      all-features: ${{ steps.list-features.outputs.all_features }}
+      changed-features: ${{ steps.list-features.outputs.changed_features }}
     steps:
       - uses: actions/checkout@v3    
-      - id: features
-        uses: ./.github/actions/list-folder-action
-        with:
-          path: ./src
-
-      - id: changed-features
+      - id: list-features
         uses: ./.github/actions/list-changed-features-action
         with:
           path: .
+          max_bins: 256
 
   prepare-matrix:
     needs: [find-features]
