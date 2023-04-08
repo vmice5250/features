@@ -34,7 +34,7 @@ on:
 jobs:
 
   find-features:
-    if: ${{ ( ! ( github.event_name == 'workflow_call' ) && ( github.event_name == 'workflow_dispatch' ) ) || ( inputs.enabled  == 'true' ) }}
+    if: ${{ ( ! ( github.event_name != 'workflow_call' ) && ( github.event_name != 'workflow_dispatch' ) ) || ( inputs.enabled  == 'true' ) }}
     runs-on: ubuntu-latest
     name: Find feature
     outputs:
