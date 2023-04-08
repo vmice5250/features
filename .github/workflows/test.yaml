@@ -36,7 +36,11 @@ jobs:
       all-features: ${{ steps.list-features.outputs.all_features }}
       changed-features: ${{ steps.list-features.outputs.changed_features }}
     steps:
-      - uses: actions/checkout@v3    
+      - uses: actions/checkout@v3   
+      - run: |
+          echo ${{ inputs.enabled  }}
+          echo ${{ github.event_name  }} 
+
       - id: list-features
         uses: ./.github/actions/list-changed-features-action
         with:
