@@ -35,7 +35,8 @@
             "gh-release": {
                 "version": "latest",
                 "repo": "etcd-io/etcd",
-                "binaryNames": "etcd,etcdctl"
+                "binaryNames": "etcd,etcdctl",
+                "libName": "etcd"
             }
         }
     },
