@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.11" \
-    --option repo='sonatype-nexus-community/nancy' --option binaryNames='nancy' --option version="$VERSION"
+    --option repo='ko-build/ko' --option binaryNames='ko' --option version="$VERSION"
 
 
 echo 'Done!'
