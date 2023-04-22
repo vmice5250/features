@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.13" \
-    --option repo='arl/gitmux' --option binaryNames='dnote' --option version="$VERSION"
+    --option repo='arl/gitmux' --option binaryNames='gitmux' --option version="$VERSION"
 
 
 echo 'Done!'
