@@ -44,7 +44,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/bash-command:1.0.0" \
-    --option command='mkdir -p /var/lib/localstack && chown -R $_REMOTE_USER /var/lib/localstack && chgrp -R $_REMOTE_USER /var/lib/localstack'
+    --option command='mkdir -p /var/lib/localstack && chown -R $_REMOTE_USER /var/lib/localstack && chgrp -R docker /var/lib/localstack'
 
 
 echo 'Done!'
