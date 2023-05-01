@@ -1,9 +1,13 @@
 #!/bin/bash -i
-
+set -x
 set -e
+id
+ls /var/lib -la
+stat /var/lib/localstack
+
 
 source dev-container-features-test-lib
 
-check "id && stat /var/lib/localstack && sleep 5 && docker ps && localstack --version && localstack start -d && sleep 10 && localstack status docker && localstack status services && localstack stop" id && ls -l /var/lib/localstack && sleep 5 && docker ps && localstack --version && localstack start -d && sleep 10 && localstack status docker && localstack status services && localstack stop
+check "sleep 5 && docker ps && localstack --version && localstack start -d && sleep 10 && localstack status docker && localstack status services && localstack stop" sleep 5 && docker ps && localstack --version && localstack start -d && sleep 10 && localstack status docker && localstack status services && localstack stop
 
 reportResults
