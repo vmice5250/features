@@ -9,7 +9,7 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.29"
+ensure_nanolayer nanolayer_location "v0.4.30"
 
 
 $nanolayer_location \
@@ -17,6 +17,20 @@ $nanolayer_location \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/apt-get-packages:1.0.4" \
     --option packages='build-essential,libsasl2-dev,g++'
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers/features/docker-in-docker:2.1.0" \
+    --option installDockerBuildx='false'
+
+
+$nanolayer_location \
+    install \
+    devcontainer-feature \
+    "ghcr.io/devcontainers/features/python:1.1.0" \
+    --option installTools='false' --option version='3.10'
 
 
 $nanolayer_location \
