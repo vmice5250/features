@@ -19,6 +19,7 @@
         "ghcr.io/devcontainers-contrib/features/pipx-package",
         "ghcr.io/devcontainers/features/python"
     ],
+    "entrypoint": "/usr/local/share/docker-init.sh",
     "mounts": [
         {
             "source": "dind-var-lib-docker-${devcontainerId}",

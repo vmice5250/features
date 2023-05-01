@@ -9,7 +9,7 @@ source ./library_scripts.sh
 # `ensure_nanolayer` is a bash function that will find any existing nanolayer installations, 
 # and if missing - will download a temporary copy that automatically get deleted at the end 
 # of the script
-ensure_nanolayer nanolayer_location "v0.4.30"
+ensure_nanolayer nanolayer_location "v0.4.35"
 
 
 $nanolayer_location \
@@ -48,4 +48,3 @@ $nanolayer_location \
 
 
 echo 'Done!'
-
