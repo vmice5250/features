@@ -1,10 +1,6 @@
 #!/bin/bash -i
-set -x
-set -e
-id
-ls /var/lib -la
-stat /var/lib/localstack
 
+set -e
 
 source dev-container-features-test-lib
 
