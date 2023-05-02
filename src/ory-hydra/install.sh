@@ -16,7 +16,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.14" \
-    --option repo='ory/keto' --option binaryNames='keto' --option version="$VERSION" --option assetRegex='.*(Linux_64).*'
+    --option repo='ory/hydra' --option binaryNames='hydra' --option version="$VERSION" --option assetRegex='.*(sqlite).*'
 
 
 echo 'Done!'
