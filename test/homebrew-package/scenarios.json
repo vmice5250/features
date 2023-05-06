@@ -17,6 +17,15 @@
             }
         }
     },
+    "test_universal": {
+        "image": "mcr.microsoft.com/devcontainers/universal:2",
+        "features": {
+            "homebrew-package": {
+                "version": "latest",
+                "package": "grpcurl"
+            }
+        }
+    },
     "test_specific_version": {
         "image": "mcr.microsoft.com/devcontainers/base:debian",
         "features": {
