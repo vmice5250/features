@@ -1,8 +1,7 @@
-#!/bin/bash -i
 
 set -e
 
-source ./library_scripts.sh
+. ./library_scripts.sh
 
 # nanolayer is a cli utility which keeps container layers as small as possible
 # source code: https://github.com/devcontainers-contrib/nanolayer

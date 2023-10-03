@@ -11,14 +11,14 @@
             "elixir-asdf": {}
         }
     },
-    "test_ubuntu_2204": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "test_ubuntu_2004": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
         "features": {
             "elixir-asdf": {}
         }
     },
-    "test_ubuntu_2004": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
+    "test_ubuntu_2204": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
         "features": {
             "elixir-asdf": {}
         }
